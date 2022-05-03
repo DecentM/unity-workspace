@@ -16,7 +16,7 @@ namespace DecentM.VideoPlayer
         /*
          * item structure:
          * 0 - VRCUrl url
-         * 1 - Texture2D thumbnail
+         * 1 - Sprite thumbnail
          * 2 - string title
          * 3 - string uploader
          * 4 - string platform
@@ -24,29 +24,46 @@ namespace DecentM.VideoPlayer
          * 6 - int likes
          * 7 - string resolution
          * 8 - int fps
+         * 9 - string description
          */
 
+        [Space]
+        [Header("Settings")]
+        public string title = "";
+        public string author = "";
+        [TextArea]
+        public string description = "";
+        [Space]
         public bool looping = true;
+        public bool shuffle = true;
+
+        [HideInInspector]
         public object[][] urls;
 
-        [SerializeField]
+        #region Serialisation
+
+        [SerializeField, HideInInspector]
         public VRCUrl[] serialisedUrls;
-        [SerializeField]
-        private Texture2D[] serialisedThumbnails;
-        [SerializeField]
+        [SerializeField, HideInInspector]
+        private Sprite[] serialisedThumbnails;
+        [SerializeField, HideInInspector]
         private string[] serialisedTitles;
-        [SerializeField]
+        [SerializeField, HideInInspector]
         private string[] serialisedUploaders;
-        [SerializeField]
+        [SerializeField, HideInInspector]
         private string[] serialisedPlatforms;
-        [SerializeField]
+        [SerializeField, HideInInspector]
         private int[] serialisedViews;
-        [SerializeField]
+        [SerializeField, HideInInspector]
         private int[] serialisedLikes;
-        [SerializeField]
+        [SerializeField, HideInInspector]
         private string[] serialisedResolutions;
-        [SerializeField]
+        [SerializeField, HideInInspector]
         private int[] serialisedFpses;
+        [SerializeField, HideInInspector]
+        private string[] serialisedDescriptions;
+        [SerializeField, HideInInspector]
+        private string[] serialisedDurations;
 
         public void OnBeforeSerialize()
         {
@@ -62,6 +79,8 @@ namespace DecentM.VideoPlayer
                 && this.serialisedLikes != null
                 && this.serialisedResolutions != null
                 && this.serialisedFpses != null
+                && this.serialisedDescriptions != null
+                && this.serialisedDurations != null
 
                 && this.serialisedUrls.Length == this.urls.Length
                 && this.serialisedThumbnails.Length == this.urls.Length
@@ -72,10 +91,12 @@ namespace DecentM.VideoPlayer
                 && this.serialisedLikes.Length == this.urls.Length
                 && this.serialisedResolutions.Length == this.urls.Length
                 && this.serialisedFpses.Length == this.urls.Length
+                && this.serialisedDescriptions.Length == this.urls.Length
+                && this.serialisedDurations.Length == this.urls.Length
             ) return;
 
             this.serialisedUrls = new VRCUrl[this.urls.Length];
-            this.serialisedThumbnails = new Texture2D[this.urls.Length];
+            this.serialisedThumbnails = new Sprite[this.urls.Length];
             this.serialisedTitles = new string[this.urls.Length];
             this.serialisedUploaders = new string[this.urls.Length];
             this.serialisedPlatforms = new string[this.urls.Length];
@@ -83,6 +104,8 @@ namespace DecentM.VideoPlayer
             this.serialisedLikes = new int[this.urls.Length];
             this.serialisedResolutions = new string[this.urls.Length];
             this.serialisedFpses = new int[this.urls.Length];
+            this.serialisedDescriptions = new string[this.urls.Length];
+            this.serialisedDurations = new string[this.urls.Length];
 
             for (int i = 0; i < this.urls.Length; i++)
             {
@@ -95,7 +118,7 @@ namespace DecentM.VideoPlayer
                 if (item == null) continue;
 
                 VRCUrl url = (VRCUrl)item[0];
-                Texture2D thumbnail = (Texture2D)item[1];
+                Sprite thumbnail = (Sprite)item[1];
                 string title = (string)item[2];
                 string uploader = (string)item[3];
                 string platform = (string)item[4];
@@ -103,16 +126,20 @@ namespace DecentM.VideoPlayer
                 int likes = (int)item[6];
                 string resolution = (string)item[7];
                 int fps = (int)item[8];
+                string description = (string)item[9];
+                string duration = (string)item[10];
 
                 this.serialisedUrls[i] = url;
                 this.serialisedThumbnails[i] = thumbnail;
                 this.serialisedTitles[i] = title;
                 this.serialisedUploaders[i] = uploader;
                 this.serialisedPlatforms[i] = platform;
-                this.serialisedLikes[i] = likes;
                 this.serialisedViews[i] = views;
+                this.serialisedLikes[i] = likes;
                 this.serialisedResolutions[i] = resolution;
                 this.serialisedFpses[i] = fps;
+                this.serialisedDescriptions[i] = description;
+                this.serialisedDurations[i] = duration;
             }
 
 #if UNITY_EDITOR && !COMPILER_UDONSHARP
@@ -134,6 +161,8 @@ namespace DecentM.VideoPlayer
                 && this.serialisedLikes.Length == this.urls.Length
                 && this.serialisedResolutions.Length == this.urls.Length
                 && this.serialisedFpses.Length == this.urls.Length
+                && this.serialisedDescriptions.Length == this.urls.Length
+                && this.serialisedDurations.Length == this.urls.Length
             ) return;
 
             this.urls = new object[this.serialisedUrls.Length][];
@@ -143,19 +172,23 @@ namespace DecentM.VideoPlayer
                 VRCUrl url = this.serialisedUrls[i];
                 if (url == null) continue;
 
-                Texture2D thumbnail = this.serialisedThumbnails[i];
+                Sprite thumbnail = this.serialisedThumbnails[i];
                 string title = this.serialisedTitles[i];
                 string uploader = this.serialisedUploaders[i];
                 string platform = this.serialisedPlatforms[i];
-                int likes = this.serialisedLikes[i];
                 int views = this.serialisedViews[i];
+                int likes = this.serialisedLikes[i];
                 string resolution = this.serialisedResolutions[i];
                 int fps = this.serialisedFpses[i];
+                string description = this.serialisedDescriptions[i];
+                string duration = this.serialisedDurations[i];
 
-                object[] item = new object[] { url, thumbnail, title, uploader, platform, likes, views, resolution, fps };
+                object[] item = new object[] { url, thumbnail, title, uploader, platform, views, likes, resolution, fps, description, duration };
                 this.urls[i] = item;
             }
         }
+
+        #endregion
 
         private int currentIndex = 0;
 
