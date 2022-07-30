@@ -24,8 +24,18 @@ jobs:
       env:
         MELONLOADER_VERSION: v0.5.4
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      run: ./bootstrap-melonloader.ps1
+      run: tools/bootstrap/melonloader.ps1
       shell: pwsh
+
+    - name: Setup SteamCMD
+      run: tools/bootstrap/steamcmd.ps1
+      shell: pwsh
+
+    - name: Setup ChilloutVR
+      run: tools/bootstrap/game.ps1
+      env:
+        STEAM_USER: ${{ secrets.STEAM_USER }}
+        STEAM_PASSWORD: ${{ secrets.STEAM_PASSWORD }}
 
     - name: Build
       run: dotnet build --no-restore -c Release

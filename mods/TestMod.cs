@@ -1,9 +1,14 @@
 ﻿using MelonLoader;
 
-namespace DecentM.Mods
+namespace DecentM.Mods.TestMod
 {
-    public class TestMod : MelonMod
+    public class Mod : MelonMod
     {
+        public override void OnApplicationStart()
+        {
+            // Patcher.Patch();
+        }
+
         public override void OnApplicationLateStart()
         {
             LoggerInstance.Msg("[DecentM] OnApplicationStart();");
