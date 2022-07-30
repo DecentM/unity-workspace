@@ -28,7 +28,7 @@ jobs:
       shell: pwsh
 
     - name: Setup SteamCMD
-      run: tools/bootstrap/steamcmd.ps1
+      run: tools/bootstrap/steamcmd.ps1 -ErrorAction SilentlyContinue
       shell: pwsh
 
     - name: Setup ChilloutVR

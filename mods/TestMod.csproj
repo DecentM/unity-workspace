@@ -34,6 +34,9 @@
     <Reference Include="0Harmony, Version=2.2.2.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>packages\Lib.Harmony.2.2.2\lib\net472\0Harmony.dll</HintPath>
     </Reference>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>ChilloutVR\ChilloutVR_Data\Managed\Assembly-CSharp.dll</HintPath>
+    </Reference>
     <Reference Include="MelonLoader, Version=0.5.4.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>MelonLoader\MelonLoader.x64\MelonLoader\MelonLoader.dll</HintPath>

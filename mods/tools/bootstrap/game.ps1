@@ -1,3 +1,5 @@
+$ErrorActionPreference = 'SilentlyContinue'
+
 $gameid = 661130
 $folder = "ChilloutVR"
 
