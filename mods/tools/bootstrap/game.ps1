@@ -17,6 +17,5 @@ if ($null -eq $env:STEAM_PASSWORD) {
     +@sSteamCmdForcePlatformType windows `
     +@NoPromptForPassword 1 `
     +force_install_dir ../../$folder `
-    +login $env:STEAM_USER $env:STEAM_PASSWORD `
     +app_update $gameid validate `
     +quit
