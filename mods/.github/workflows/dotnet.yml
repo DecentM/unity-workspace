@@ -16,7 +16,7 @@ jobs:
     - name: Restore dependencies
       run: dotnet restore
     - name: Setup MelonLoader
-      uses: JustPyrrha/setup-melonloader@v1.0.3
+      uses: DecentM/setup-melonloader@master
     - name: Build
       run: dotnet build --no-restore
     - name: Test
