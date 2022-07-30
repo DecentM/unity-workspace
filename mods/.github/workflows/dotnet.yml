@@ -16,7 +16,7 @@ jobs:
     - name: Restore dependencies
       run: dotnet restore
     - name: Setup MelonLoader
-      uses: DecentM/setup-melonloader
+      uses: DecentM/setup-melonloader@81bd8992abe70f9abdb6b064168a89c20dccdd5b
     - name: Build
       run: dotnet build --no-restore
     - name: Test
