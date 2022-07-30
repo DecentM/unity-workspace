@@ -1,4 +1,5 @@
 $gameid = 661130
+$folder = "ChilloutVR"
 
 if ($null -eq $env:STEAM_USER) {
     Write-Output "The STEAM_USER environment variable is not set. Cannot download the game."
@@ -11,9 +12,9 @@ if ($null -eq $env:STEAM_PASSWORD) {
 }
 
 .\SteamCMD\steamcmd\steamcmd.exe `
-    +@ShutdownOnFailedCommand 1 `
+    +@sSteamCmdForcePlatformType windows `
     +@NoPromptForPassword 1 `
-    +force_install_dir ../../ChilloutVR `
+    +force_install_dir ../../$folder `
     +login $env:STEAM_USER $env:STEAM_PASSWORD `
     +app_update $gameid validate `
     +quit
