@@ -9,5 +9,5 @@ if ($null -eq $env:STEAM_PASSWORD) {
 }
 
 .\SteamCMD\steamcmd\steamcmd.exe `
-    +login $env:STEAM_USER $env:STEAM_PASSWORD `
+    +login $env:STEAM_USER "$env:STEAM_PASSWORD" `
     +quit
