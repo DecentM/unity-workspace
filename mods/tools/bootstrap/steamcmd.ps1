@@ -14,8 +14,3 @@ Invoke-WebRequest $url -OutFile steamcmd.zip
 Expand-Archive -LiteralPath steamcmd.zip -DestinationPath steamcmd
 
 Set-Location $pastlocation
-
-.\SteamCMD\steamcmd\steamcmd.exe `
-    +@NoPromptForPassword 1 `
-    +login $env:STEAM_USER $env:STEAM_PASSWORD `
-    +quit

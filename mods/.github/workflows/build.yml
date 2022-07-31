@@ -21,21 +21,25 @@ jobs:
       run: dotnet restore
 
     - name: Setup MelonLoader
+      run: tools/bootstrap/melonloader.ps1
+      shell: pwsh
       env:
         MELONLOADER_VERSION: v0.5.4
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      run: tools/bootstrap/melonloader.ps1
-      shell: pwsh
 
     - name: Setup SteamCMD
-      run: tools/bootstrap/steamcmd.ps1 -ErrorAction SilentlyContinue
+      run: tools/bootstrap/steamcmd.ps1
       shell: pwsh
 
-    - name: Setup ChilloutVR
-      run: tools/bootstrap/game.ps1
+    - name: Log into SteamCMD
+      run: tools/bootstrap/steamcmd-login.ps1
+      shell: pwsh
       env:
         STEAM_USER: ${{ secrets.STEAM_USER }}
         STEAM_PASSWORD: ${{ secrets.STEAM_PASSWORD }}
+
+    - name: Setup ChilloutVR
+      run: tools/bootstrap/game.ps1
 
     - name: Build
       run: dotnet build --no-restore -c Release
