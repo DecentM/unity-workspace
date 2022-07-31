@@ -31,15 +31,12 @@ jobs:
       run: tools/bootstrap/steamcmd.ps1
       shell: pwsh
 
-    - name: Log into SteamCMD
-      run: tools/bootstrap/steamcmd-login.ps1
+    - name: Setup ChilloutVR
+      run: tools/bootstrap/game.ps1
       shell: pwsh
       env:
         STEAM_USER: ${{ secrets.STEAM_USER }}
         STEAM_PASSWORD: ${{ secrets.STEAM_PASSWORD }}
-
-    - name: Setup ChilloutVR
-      run: tools/bootstrap/game.ps1
 
     - name: Build
       run: dotnet build --no-restore -c Release
