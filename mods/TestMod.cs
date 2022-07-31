@@ -6,12 +6,14 @@ namespace DecentM.Mods.TestMod
     {
         public override void OnApplicationStart()
         {
-            // Patcher.Patch();
+            LoggerInstance.Msg("Patching...");
+            Patcher.Patch();
+            LoggerInstance.Msg("Patched!");
         }
 
         public override void OnApplicationLateStart()
         {
-            LoggerInstance.Msg("[DecentM] OnApplicationStart();");
+            LoggerInstance.Msg("OnApplicationStart();");
         }
     }
 }
