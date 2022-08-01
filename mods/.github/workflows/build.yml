@@ -37,6 +37,10 @@ jobs:
         gameid: 661130
         folder: ChilloutVR
 
+    - name: Mod the game
+      run: tools/bootstrap/mod-game.ps1
+      shell: pwsh
+
     - name: Build
       run: dotnet build --no-restore -c Release
 
