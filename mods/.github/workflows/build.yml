@@ -31,7 +31,7 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
     - name: Setup ChilloutVR
-      uses: DecentM/setup-steam-game-windows@v0.0.1
+      uses: DecentM/setup-steam-game-windows@v0.0.2
       with:
         username: ${{ secrets.STEAM_USER }}
         password: ${{ secrets.STEAM_PASSWORD }}
