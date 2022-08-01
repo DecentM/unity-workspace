@@ -1,7 +1,5 @@
-$unitysetup31 = "UnitySetup64-2019.4.31f1.exe"
-$unitysetup28 = "UnitySetup64-2019.4.28f1.exe"
-$url31 = "https://download.unity3d.com/download_unity/bd5abf232a62/Windows64EditorInstaller/$unitysetup31"
-$url28 = "https://download.unity3d.com/download_unity/1381962e9d08/Windows64EditorInstaller/$unitysetup28"
+$unitysetup = "UnitySetup64-2019.4.28f1.exe"
+$url = "https://download.unity3d.com/download_unity/1381962e9d08/Windows64EditorInstaller/$unitysetup"
 $folder = "Mono"
 
 #if (Test-Path -Path $folder) {
@@ -53,19 +51,11 @@ Set-Location $folder
 # dotnet build -c Release
 # Set-Location ../../../
 
-if (Test-Path -Path "$unitysetup31") {
-    Write-Output "Found existing Unity 2019.4.31f1 installer..."
+if (Test-Path -Path "$unitysetup") {
+    Write-Output "Found existing $unitysetup"
 } else {
-    Write-Output "Downloading Unity 2019.4.31f1 installer..."
-    Invoke-WebRequest $url31 -OutFile "$unitysetup31"
-}
-
-if (Test-Path -Path "$unitysetup28") {
-    Write-Output "Found existing Unity 2019.4.28f1 installer..."
-}
-else {
-    Write-Output "Downloading Unity 2019.4.28f1 installer..."
-    Invoke-WebRequest $url28 -OutFile "$unitysetup28"
+    Write-Output "Downloading $unitysetup..."
+    Invoke-WebRequest $url -OutFile "$unitysetup"
 }
 
 if (Test-Path -Path "MonoExtract") {
@@ -76,7 +66,7 @@ if (Test-Path -Path "MonoExtract") {
 
 $monopath = "Editor\Data\PlaybackEngines\windowsstandalonesupport\Variations\win64_development_mono"
 
-7z x "$unitysetup28" "$monopath" -oMonoExtract
+7z x "$unitysetup" "$monopath" -oMonoExtract
 
 Set-Location $pastlocation
 
