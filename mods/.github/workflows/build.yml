@@ -30,16 +30,13 @@ jobs:
         MELONLOADER_VERSION: v0.5.4
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-    - name: Setup SteamCMD
-      run: tools/bootstrap/steamcmd.ps1
-      shell: pwsh
-
     - name: Setup ChilloutVR
-      run: tools/bootstrap/game.ps1
-      shell: pwsh
-      env:
-        STEAM_USER: ${{ secrets.STEAM_USER }}
-        STEAM_PASSWORD: ${{ secrets.STEAM_PASSWORD }}
+      uses: DecentM/setup-steam-game-windows@v0.0.1
+      with:
+        username: ${{ secrets.STEAM_USER }}
+        password: ${{ secrets.STEAM_PASSWORD }}
+        gameid: 661130
+        folder: ChilloutVR
 
     - name: Build
       run: dotnet build --no-restore -c Release
@@ -48,4 +45,4 @@ jobs:
       uses: softprops/action-gh-release@v1
       if: startsWith(github.ref, 'refs/tags/')
       with:
-        files: src/Mods/NoSteamRestart/bin/Release/NoSteamRestart.dll
+        files: Mods/NoSteamRestart/bin/Release/NoSteamRestart.dll
