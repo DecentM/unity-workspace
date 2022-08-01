@@ -2,17 +2,17 @@
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 using MelonLoader;
-using DecentM.Mods.TestMod;
+using DecentM.Mods.NoSteamRestart;
 
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("TestMod")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("NoSteamRestart")]
+[assembly: AssemblyDescription("Prevents games using the C# Steamworks API from restarting under Steam")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("TestMod")]
-[assembly: AssemblyCopyright("Copyright ©  2022")]
+[assembly: AssemblyCompany("DecentM")]
+[assembly: AssemblyProduct("NoSteamRestart")]
+[assembly: AssemblyCopyright("Copyright © DecentM 2022")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -37,5 +37,5 @@ using DecentM.Mods.TestMod;
 [assembly: AssemblyVersion("1.0.0.0")]
 [assembly: AssemblyFileVersion("1.0.0.0")]
 
-[assembly: MelonInfo(typeof(Mod), "TestMod", "0.0.1", "DecentM")]
+[assembly: MelonInfo(typeof(Mod), "NoSteamRestart", "1.0.0", "DecentM")]
 [assembly: MelonGame(null, null)] // FIXME: Figure out what the heck are the values for CVR

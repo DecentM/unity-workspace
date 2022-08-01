@@ -1,6 +1,6 @@
 ﻿using MelonLoader;
 
-namespace DecentM.Mods.TestMod
+namespace DecentM.Mods.NoSteamRestart
 {
     public class Mod : MelonMod
     {
@@ -8,12 +8,6 @@ namespace DecentM.Mods.TestMod
         {
             LoggerInstance.Msg("Patching...");
             Patcher.Patch();
-            LoggerInstance.Msg("After patching!");
-        }
-
-        public override void OnApplicationLateStart()
-        {
-            LoggerInstance.Msg("OnApplicationStart();");
         }
     }
 }

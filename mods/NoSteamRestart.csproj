@@ -93,7 +93,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Patcher.cs" />
-    <Compile Include="Patches\AllowMoreComponents.cs" />
     <Compile Include="Patches\NoSteamRestart.cs" />
     <Compile Include="TestMod.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
