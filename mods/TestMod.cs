@@ -8,7 +8,7 @@ namespace DecentM.Mods.TestMod
         {
             LoggerInstance.Msg("Patching...");
             Patcher.Patch();
-            LoggerInstance.Msg("Patched!");
+            LoggerInstance.Msg("After patching!");
         }
 
         public override void OnApplicationLateStart()

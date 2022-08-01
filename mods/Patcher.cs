@@ -8,7 +8,14 @@ namespace DecentM.Mods.TestMod
     {
         public static void Patch()
         {
-            HarmonyLib.Harmony.CreateAndPatchAll(typeof(BreakMirrors));
+            AllowMoreComponents.PatchManually();
+
+            // HarmonyLib.Harmony.CreateAndPatchAll(typeof(AllowMoreComponents));
+            // HarmonyLib.Harmony.CreateAndPatchAll(typeof(AllowMoreComponents1));
+            // HarmonyLib.Harmony.CreateAndPatchAll(typeof(AllowMoreComponents2));
+
+            HarmonyLib.Harmony.CreateAndPatchAll(typeof(NoSteamRestartMetaPort));
+            HarmonyLib.Harmony.CreateAndPatchAll(typeof(NoRestartSteamAPI));
         }
     }
 }
