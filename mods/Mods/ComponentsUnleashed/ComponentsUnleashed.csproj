@@ -70,12 +70,18 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
+    <Reference Include="Unity.TextMeshPro, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ChilloutVR\ChilloutVR_Data\Managed\Unity.TextMeshPro.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEngine.CoreModule">
       <HintPath>..\..\chilloutvr\ChilloutVR_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ComponentsUnleashed.cs" />
+    <Compile Include="Components\PerformanceGovernor\PerformanceGovernor.cs" />
+    <Compile Include="Components\PerformanceGovernor\PerformanceGovernorPlugin.cs" />
     <Compile Include="Components\PubSub\Pubsub.cs" />
     <Compile Include="Components\PubSub\PubsubSubscriber.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

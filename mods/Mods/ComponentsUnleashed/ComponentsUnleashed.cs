@@ -18,6 +18,8 @@ namespace DecentM.Mods.ComponentsUnleashed
             whiteList.Add(typeof(Pubsub.PubsubHost));
             whiteList.Add(typeof(Pubsub.PubsubSubscriber));
 
+            whiteList.Add(typeof(Prefabs.Performance.PerformanceGovernor));
+
             Traverse.Create<CVRTools>().Field("componentWhiteList").SetValue(whiteList);
         }
     }
