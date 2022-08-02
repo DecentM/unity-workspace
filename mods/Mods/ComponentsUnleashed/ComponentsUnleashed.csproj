@@ -74,8 +74,32 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\ChilloutVR\ChilloutVR_Data\Managed\Unity.TextMeshPro.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEngine.AnimationModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ChilloutVR\ChilloutVR_Data\Managed\UnityEngine.AnimationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AudioModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ChilloutVR\ChilloutVR_Data\Managed\UnityEngine.AudioModule.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEngine.CoreModule">
       <HintPath>..\..\chilloutvr\ChilloutVR_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ChilloutVR\ChilloutVR_Data\Managed\UnityEngine.PhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ChilloutVR\ChilloutVR_Data\Managed\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ChilloutVR\ChilloutVR_Data\Managed\UnityEngine.UIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VideoModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ChilloutVR\ChilloutVR_Data\Managed\UnityEngine.VideoModule.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -84,11 +108,42 @@
     <Compile Include="Components\PerformanceGovernor\PerformanceGovernorPlugin.cs" />
     <Compile Include="Components\PubSub\Pubsub.cs" />
     <Compile Include="Components\PubSub\PubsubSubscriber.cs" />
+    <Compile Include="Components\RefugeeTools.cs" />
+    <Compile Include="Components\VideoPlayer\BasePlayerHandler.cs" />
+    <Compile Include="Components\VideoPlayer\PlayerHandlers\PlayerHandler.cs" />
+    <Compile Include="Components\VideoPlayer\PlayerHandlers\UnityVideo.cs" />
+    <Compile Include="Components\VideoPlayer\Plugins\AutoLivestreamDetectorPlugin.cs" />
+    <Compile Include="Components\VideoPlayer\Plugins\AutoPlayPlugin.cs" />
+    <Compile Include="Components\VideoPlayer\Plugins\AutoRetryPlugin.cs" />
+    <Compile Include="Components\VideoPlayer\Plugins\DebugPlugin.cs" />
+    <Compile Include="Components\VideoPlayer\Plugins\LoadRequestHandlerPlugin.cs" />
+    <Compile Include="Components\VideoPlayer\Plugins\Playlist\PlaylistItemRenderer.cs" />
+    <Compile Include="Components\VideoPlayer\Plugins\Playlist\PlaylistPlayerPlugin.cs" />
+    <Compile Include="Components\VideoPlayer\Plugins\RenderTextureExportPlugin.cs" />
+    <Compile Include="Components\VideoPlayer\Plugins\ResolutionUpdaterPlugin.cs" />
+    <Compile Include="Components\VideoPlayer\Plugins\ScreenAnalysisPlugin.cs" />
+    <Compile Include="Components\VideoPlayer\Plugins\SkipToTimestampPlugin.cs" />
+    <Compile Include="Components\VideoPlayer\Plugins\SoundEffectsPlugin.cs" />
+    <Compile Include="Components\VideoPlayer\Plugins\SubtitlesPlugin.cs" />
+    <Compile Include="Components\VideoPlayer\Plugins\TextureReferencePlugin.cs" />
+    <Compile Include="Components\VideoPlayer\Plugins\TextureUpdaterPlugin.cs" />
+    <Compile Include="Components\VideoPlayer\Plugins\UIPlugin.cs" />
+    <Compile Include="Components\VideoPlayer\Plugins\URLVerifierPlugin.cs" />
+    <Compile Include="Components\VideoPlayer\Plugins\VideoPlayerPlugin.cs" />
+    <Compile Include="Components\VideoPlayer\Plugins\Playlist\VideoPlaylist.cs" />
+    <Compile Include="Components\VideoPlayer\Plugins\Playlist\VideoPlaylistUI.cs" />
+    <Compile Include="Components\VideoPlayer\ScreenHandler.cs" />
+    <Compile Include="Components\VideoPlayer\VideoPlayerEvents.cs" />
+    <Compile Include="Components\VideoPlayer\VideoPlayerSystem.cs" />
+    <Compile Include="Components\VideoPlayer\VideoPlayerUI.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

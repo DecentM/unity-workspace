@@ -4,6 +4,7 @@ namespace DecentM.Prefabs.VideoPlayer.Handlers
 {
     public enum VideoPlayerHandlerType
     {
+        AVPro,
         Unity
     }
 

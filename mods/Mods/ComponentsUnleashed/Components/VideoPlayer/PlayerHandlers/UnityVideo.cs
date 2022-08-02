@@ -15,7 +15,12 @@
 
         private void OnVideoError(UnityEngine.Video.VideoPlayer source, string message)
         {
-            this.baseHandler.OnVideoError(message);
+            VideoError error = new VideoError(VideoErrorType.Unknown, message);
+
+            if (message.Contains("denied"))
+                error.type = VideoErrorType.HttpError;
+
+            this.baseHandler.OnVideoError(error);
         }
 
         private void OnPlayerLoaded(UnityEngine.Video.VideoPlayer source)

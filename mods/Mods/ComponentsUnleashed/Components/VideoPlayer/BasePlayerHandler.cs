@@ -4,6 +4,25 @@ using DecentM.Prefabs.VideoPlayer.Handlers;
 
 namespace DecentM.Prefabs.VideoPlayer
 {
+    public enum VideoErrorType
+    {
+        Unknown,
+        HttpError,
+        Timeout,
+    }
+
+    public struct VideoError
+    {
+        public VideoError(VideoErrorType type, string message)
+        {
+            this.type = type;
+            this.message = message;
+        }
+
+        public VideoErrorType type;
+        public string message;
+    }
+
     public abstract class BasePlayerHandler : MonoBehaviour
     {
         public PlayerHandler player;
@@ -91,7 +110,7 @@ namespace DecentM.Prefabs.VideoPlayer
             this.events.OnLoadReady(this.player.GetDuration());
         }
 
-        public void OnVideoError(string message)
+        public void OnVideoError(VideoError message)
         {
             this.events.OnLoadError(message);
         }

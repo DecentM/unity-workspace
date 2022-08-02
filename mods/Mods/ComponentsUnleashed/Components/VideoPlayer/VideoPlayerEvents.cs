@@ -139,9 +139,9 @@ namespace DecentM.Prefabs.VideoPlayer
             this.BroadcastEvent(VideoPlayerEvent.OnUnload);
         }
 
-        public void OnLoadError(string message)
+        public void OnLoadError(VideoError error)
         {
-            this.BroadcastEvent(VideoPlayerEvent.OnLoadError, message);
+            this.BroadcastEvent(VideoPlayerEvent.OnLoadError, error);
         }
 
         public void OnLoadRatelimitWaiting()
