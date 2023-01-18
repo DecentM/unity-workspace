@@ -9,10 +9,10 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{2077309B-E745-43C3-1FC6-5016F6CA986A}</ProjectGuid>
+    <ProjectGuid>{F00AB0C7-5B2D-0FE4-F661-D10D7C693973}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <AssemblyName>Assembly-CSharp-Editor</AssemblyName>
+    <AssemblyName>DecentM.UI</AssemblyName>
     <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <BaseDirectory>.</BaseDirectory>
@@ -48,63 +48,19 @@
     <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <UnityProjectGenerator>Package</UnityProjectGenerator>
     <UnityProjectGeneratorVersion>2.0.11</UnityProjectGeneratorVersion>
-    <UnityProjectType>Editor:5</UnityProjectType>
+    <UnityProjectType>Game:1</UnityProjectType>
     <UnityBuildTarget>StandaloneWindows64:19</UnityBuildTarget>
     <UnityVersion>2019.4.31f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Assets\DecentM\Collections\Tests\Editor\DoubleLinkedListTests.cs" />
-    <Compile Include="Assets\DecentM\Collections\Tests\Editor\ListTests.cs" />
-    <Compile Include="Assets\DecentM\Collections\Tests\Editor\MapTests.cs" />
-    <Compile Include="Assets\DecentM\Collections\Tests\Editor\QueueTests.cs" />
-    <Compile Include="Assets\DecentM\Collections\Tests\Editor\StackTests.cs" />
-    <Compile Include="Assets\DecentM\Editor\ArabicLigaturesPreprocessor.cs" />
-    <Compile Include="Assets\DecentM\Editor\AssetPaths.cs" />
-    <Compile Include="Assets\DecentM\Editor\CombinationsGenerator.cs" />
-    <Compile Include="Assets\DecentM\Editor\ComponentCollector.cs" />
-    <Compile Include="Assets\DecentM\Editor\Inspector.cs" />
-    <Compile Include="Assets\DecentM\Editor\MaterialIcons\Mappings.cs" />
-    <Compile Include="Assets\DecentM\Editor\MaterialIcons\MaterialIcons.cs" />
-    <Compile Include="Assets\DecentM\Editor\RandomStringGenerator.cs" />
-    <Compile Include="Assets\DecentM\Editor\SelfLocator\SelfLocatorAsset.cs" />
-    <Compile Include="Assets\DecentM\Editor\SelfLocator\SelfLocatorImporter.cs" />
-    <Compile Include="Assets\DecentM\Editor\SelfLocator\SelfLocatorInspector.cs" />
-    <Compile Include="Assets\DecentM\Editor\TextProcessing.cs" />
-    <Compile Include="Assets\DecentM\Editor\Utilities.cs" />
-    <Compile Include="Assets\DecentM\Editor\VideoPlayer\Importers\SubtitleImporter.cs" />
-    <Compile Include="Assets\DecentM\Editor\VideoPlayer\Inspectors\SubtitleImporterInspector.cs" />
-    <Compile Include="Assets\DecentM\Editor\VideoPlayer\Inspectors\VideoPlayerUIInspector.cs" />
-    <Compile Include="Assets\DecentM\Editor\VideoPlayer\Inspectors\VideoPlaylistInspector.cs" />
-    <Compile Include="Assets\DecentM\Editor\VideoPlayer\PluginManager.cs" />
-    <Compile Include="Assets\DecentM\Editor\VideoPlayer\Subtitles\Abstracts.cs" />
-    <Compile Include="Assets\DecentM\Editor\VideoPlayer\Subtitles\Ast.cs" />
-    <Compile Include="Assets\DecentM\Editor\VideoPlayer\Subtitles\Compiler.cs" />
-    <Compile Include="Assets\DecentM\Editor\VideoPlayer\Subtitles\FileFormats\SRT\Lexer.cs" />
-    <Compile Include="Assets\DecentM\Editor\VideoPlayer\Subtitles\FileFormats\SRT\Parser.cs" />
-    <Compile Include="Assets\DecentM\Editor\VideoPlayer\Subtitles\FileFormats\SRT\Writer.cs" />
-    <Compile Include="Assets\DecentM\Editor\VideoPlayer\Subtitles\FileFormats\VSI\Lexer.cs" />
-    <Compile Include="Assets\DecentM\Editor\VideoPlayer\Subtitles\FileFormats\VSI\Parser.cs" />
-    <Compile Include="Assets\DecentM\Editor\VideoPlayer\Subtitles\FileFormats\VSI\Utils.cs" />
-    <Compile Include="Assets\DecentM\Editor\VideoPlayer\Subtitles\FileFormats\VSI\Writer.cs" />
-    <Compile Include="Assets\DecentM\Editor\VideoPlayer\Subtitles\FileFormats\VTT\Lexer.cs" />
-    <Compile Include="Assets\DecentM\Editor\VideoPlayer\Subtitles\FileFormats\VTT\Parser.cs" />
-    <Compile Include="Assets\DecentM\Editor\VideoPlayer\Subtitles\FileFormats\VTT\Writer.cs" />
-    <Compile Include="Assets\DecentM\Editor\VideoPlayer\Subtitles\Tests\Misc.cs" />
-    <Compile Include="Assets\DecentM\Editor\VideoPlayer\Subtitles\Tests\Srt.cs" />
-    <Compile Include="Assets\DecentM\Editor\VideoPlayer\Subtitles\Tests\Vtt.cs" />
-    <Compile Include="Assets\DecentM\Editor\VideoPlayer\Subtitles\Transformer.cs" />
-    <Compile Include="Assets\DecentM\Editor\VideoPlayer\VideoPlayerAutoFixer.cs" />
-    <Compile Include="Assets\DecentM\Editor\VideoRatelimit\VideoRatelimitAutoFixer.cs" />
-    <Compile Include="Assets\DecentM\PerformanceGovernor\Editor\PerformanceGovernorInspector.cs" />
-    <Compile Include="Assets\Editor\AnimationRefactor.cs" />
-    <Compile Include="Assets\Editor\ReplaceWithPrefab.cs" />
-    <Compile Include="Assets\VLCUnity\Editor\Build.cs" />
+    <Compile Include="Assets\DecentM\UI\Dropdown\Scripts\Runtime\Dropdown.cs" />
+    <Compile Include="Assets\DecentM\UI\Dropdown\Scripts\Runtime\DropdownOption.cs" />
+    <Compile Include="Assets\DecentM\UI\VirtualScroll\PlainTextVirtualScrollItem.cs" />
+    <Compile Include="Assets\DecentM\UI\VirtualScroll\VirtualScroll.cs" />
+    <Compile Include="Assets\DecentM\UI\VirtualScroll\VirtualScrollItem.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\DecentM\Editor\MaterialIcons\LICENSE.txt" />
-    <None Include="Assets\NuGet\Editor\NugetForUnity.dll" />
-    <None Include="Assets\DecentM\PerformanceGovernor\Editor\PerformanceGovernorInspector.uss" />
-    <None Include="Assets\DecentM\Fonts\Editor\unicode-ranges.txt" />
+    <None Include="Assets\DecentM\UI\DecentM.UI.asmdef" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -331,9 +287,6 @@
     </Reference>
     <Reference Include="unityplastic">
       <HintPath>Library\PackageCache\com.unity.collab-proxy@1.10.2\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
-    </Reference>
-    <Reference Include="nunit.framework">
-      <HintPath>Library\PackageCache\com.unity.ext.nunit@1.0.6\net35\unity-custom\nunit.framework.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>D:\UnityEditors\2019.4.31f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\mscorlib.dll</HintPath>
@@ -692,99 +645,20 @@
     <Reference Include="Boo.Lang">
       <HintPath>D:\UnityEditors\2019.4.31f1\Editor\Data\MonoBleedingEdge\lib\mono\unityscript\Boo.Lang.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEditor.TestRunner">
-      <HintPath>Library\ScriptAssemblies\UnityEditor.TestRunner.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.TestRunner">
-      <HintPath>Library\ScriptAssemblies\UnityEngine.TestRunner.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Timeline.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VSCode.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.UI">
-      <HintPath>Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Timeline">
-      <HintPath>Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Rider.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VisualStudio.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.TextMeshPro">
       <HintPath>Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.PlasticSCM.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="Assembly-CSharp.csproj">
-      <Project>{D1DB08F0-D229-32FD-49FE-3102DD3826C4}</Project>
-      <Name>Assembly-CSharp</Name>
-    </ProjectReference>
-    <ProjectReference Include="WorldScripts.csproj">
-      <Project>{A5B17C64-F7A7-11F1-17CF-F902BD8227AE}</Project>
-      <Name>WorldScripts</Name>
-    </ProjectReference>
-    <ProjectReference Include="DecentM.Prefabs.csproj">
-      <Project>{797196E7-0705-8851-2526-65B3A4A2CBE6}</Project>
-      <Name>DecentM.Prefabs</Name>
-    </ProjectReference>
     <ProjectReference Include="DecentM.Shared.csproj">
       <Project>{A7E85C1F-A9E4-55E8-7EDD-60E613E9A990}</Project>
       <Name>DecentM.Shared</Name>
-    </ProjectReference>
-    <ProjectReference Include="DecentM.Collections.csproj">
-      <Project>{4AC5AD01-3A85-465B-AD7D-E365CB6768E3}</Project>
-      <Name>DecentM.Collections</Name>
-    </ProjectReference>
-    <ProjectReference Include="DecentM.Pubsub.csproj">
-      <Project>{D0F12F58-B1D9-4FD2-4AE2-F7501D1B97F9}</Project>
-      <Name>DecentM.Pubsub</Name>
-    </ProjectReference>
-    <ProjectReference Include="DecentM.NotificationSystem.csproj">
-      <Project>{6B7463C8-AF57-4697-C219-BD2FE7B8EFA0}</Project>
-      <Name>DecentM.NotificationSystem</Name>
-    </ProjectReference>
-    <ProjectReference Include="DecentM.PerformanceGovernor.csproj">
-      <Project>{95030DBB-ED10-41A3-20CF-6FF6BBF70F09}</Project>
-      <Name>DecentM.PerformanceGovernor</Name>
-    </ProjectReference>
-    <ProjectReference Include="DecentM.Collections.Editor.csproj">
-      <Project>{EF728172-EE45-717F-A694-B0A59D237BAB}</Project>
-      <Name>DecentM.Collections.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="DecentM.Shared.Editor.csproj">
-      <Project>{579F34EF-3B2C-A1B4-93F3-268F8D78EB14}</Project>
-      <Name>DecentM.Shared.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="DecentM.VideoPlayer.csproj">
-      <Project>{C09956AF-97C1-4321-F33D-E64F11494DB6}</Project>
-      <Name>DecentM.VideoPlayer</Name>
-    </ProjectReference>
-    <ProjectReference Include="DecentM.YTDlp.csproj">
-      <Project>{E3329006-4DA5-F0A9-0016-AFCA57038B0B}</Project>
-      <Name>DecentM.YTDlp</Name>
-    </ProjectReference>
-    <ProjectReference Include="DecentM.VideoRatelimit.csproj">
-      <Project>{0BDFC89A-0BCD-ED73-6383-7D266B41252C}</Project>
-      <Name>DecentM.VideoRatelimit</Name>
-    </ProjectReference>
-    <ProjectReference Include="DecentM.UI.csproj">
-      <Project>{F00AB0C7-5B2D-0FE4-F661-D10D7C693973}</Project>
-      <Name>DecentM.UI</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

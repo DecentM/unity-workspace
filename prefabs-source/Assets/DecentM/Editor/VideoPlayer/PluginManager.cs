@@ -1,9 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using DecentM.EditorTools;
-
-namespace DecentM.Prefabs.VideoPlayer.EditorTools
+﻿namespace DecentM.VideoPlayer.EditorTools
 {
     public struct PluginRequirements
     {

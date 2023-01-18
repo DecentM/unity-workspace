@@ -147,7 +147,7 @@ namespace DecentM.Mods.CustomComponents.StatsD
 
             this.udp.SendAsync(sendBytes, sendBytes.Length, this.host, this.port)
                 .ContinueWith(sendTask => {
-                    if (sendTask.IsCompletedSuccessfully)
+                    if (sendTask.Status == TaskStatus.RanToCompletion)
                     {
                         UnityEngine.Debug.Log($"[StatsDClient] Sent {sendBytes.Length} bytes to {host}:{port}. Queue size: {this.sendQueue.Count}\nMessage: {packet}");
                     }

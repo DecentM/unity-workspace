@@ -2,9 +2,9 @@
 using UnityEditor;
 
 using DecentM.EditorTools;
-using DecentM.Prefabs.VideoPlayer.Handlers;
+using DecentM.VideoPlayer.Handlers;
 
-namespace DecentM.Prefabs.VideoRatelimit.EditorTools
+namespace DecentM.VideoRatelimit.EditorTools
 {
     public static class VideoRatelimitAutoFixer
     {

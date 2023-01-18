@@ -1,0 +1,19 @@
+{
+    "name": "DecentM.VideoPlayer",
+    "references": [
+        "GUID:6055be8ebefd69e48b49212b09b47b2f",
+        "GUID:38626b9f0b786b2408aab9704604a413",
+        "GUID:a85d1822798dd5748abc65cd720f5b56",
+        "GUID:80d8201452ffbb54b90d7d0b6735aba0",
+        "GUID:e231e6cf10d5f9a46a7f7d7642b5818a"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

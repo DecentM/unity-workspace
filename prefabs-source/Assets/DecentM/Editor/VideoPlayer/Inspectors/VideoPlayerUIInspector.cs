@@ -1,10 +1,9 @@
 ﻿using UnityEditor;
 
 using DecentM.EditorTools;
-using DecentM.Shared;
-using DecentM.Prefabs.VideoPlayer.Plugins;
+using DecentM.VideoPlayer.Plugins;
 
-namespace DecentM.Prefabs.VideoPlayer
+namespace DecentM.VideoPlayer
 {
     [CustomEditor(typeof(VideoPlayerUI))]
     public class VideoPlayerUIInspector : Inspector

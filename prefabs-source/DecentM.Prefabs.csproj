@@ -59,17 +59,9 @@
     <Compile Include="Assets\DecentM\Prefabs\LibDecentM\PlayerList.cs" />
     <Compile Include="Assets\DecentM\Prefabs\LibDecentM\Scheduling.cs" />
     <Compile Include="Assets\DecentM\Prefabs\ManualCamera\ManualCamera.cs" />
-    <Compile Include="Assets\DecentM\Prefabs\UI\Dropdown\Dropdown.cs" />
-    <Compile Include="Assets\DecentM\Prefabs\UI\Dropdown\DropdownOption.cs" />
-    <Compile Include="Assets\DecentM\Prefabs\UI\VirtualScroll\PlainTextVirtualScrollItem.cs" />
-    <Compile Include="Assets\DecentM\Prefabs\UI\VirtualScroll\VirtualScroll.cs" />
-    <Compile Include="Assets\DecentM\Prefabs\UI\VirtualScroll\VirtualScrollItem.cs" />
-    <Compile Include="Assets\DecentM\Prefabs\VideoRatelimit\Scripts\PlayerLoadMonitoring.cs" />
-    <Compile Include="Assets\DecentM\Prefabs\VideoRatelimit\Scripts\VideoRatelimitSystem.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\DecentM\Prefabs\DecentM.Prefabs.asmdef" />
-    <None Include="Assets\DecentM\Prefabs\VideoPlayer\Shaders\VideoScreen.shader" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

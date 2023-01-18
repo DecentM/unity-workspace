@@ -4,10 +4,10 @@ using UnityEngine;
 using UnityEditor;
 
 using DecentM.EditorTools;
-using DecentM.Prefabs.VideoPlayer.Plugins;
-using DecentM.Prefabs.VideoRatelimit;
+using DecentM.VideoPlayer.Plugins;
+using DecentM.VideoRatelimit;
 
-namespace DecentM.Prefabs.VideoPlayer.EditorTools
+namespace DecentM.VideoPlayer.EditorTools
 {
     public static class VideoPlayerAutoFixer
     {

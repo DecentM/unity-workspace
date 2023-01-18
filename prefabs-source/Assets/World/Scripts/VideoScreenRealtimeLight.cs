@@ -1,9 +1,10 @@
 ﻿using UnityEngine;
 
-using DecentM.Prefabs.VideoPlayer;
-using DecentM.Prefabs.VideoPlayer.Plugins;
+using DecentM.Shared;
+using DecentM.VideoPlayer;
+using DecentM.VideoPlayer.Plugins;
 
-public class VideoScreenRealtimeLight : MonoBehaviour
+public class VideoScreenRealtimeLight : DBehaviour
 {
     public ScreenAnalysisPlugin analysis;
     public VideoPlayerSystem system;
