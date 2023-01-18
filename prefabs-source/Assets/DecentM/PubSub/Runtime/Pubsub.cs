@@ -1,7 +1,8 @@
 ﻿using System.Collections.Generic;
-using UnityEngine;
 
-namespace DecentM.Prefabs.Pubsub
+using DecentM.Shared;
+
+namespace DecentM.Pubsub
 {
     struct QueueItem
     {
@@ -17,7 +18,7 @@ namespace DecentM.Prefabs.Pubsub
         public PubsubSubscriber subscriber;
     }
 
-    public abstract class PubsubHost : MonoBehaviour
+    public abstract class PubsubHost : DBehaviour
     {
         public int batchSize = 10;
 

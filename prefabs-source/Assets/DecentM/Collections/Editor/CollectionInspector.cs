@@ -1,7 +1,6 @@
 ﻿using UnityEditor;
 using UnityEngine;
 using DecentM.Collections;
-using DecentM.Shared.Editor;
 
 namespace DecentM.EditorTools
 {
@@ -11,8 +10,6 @@ namespace DecentM.EditorTools
 
         public override void OnInspectorGUI()
         {
-            UdonSharpGUI.DrawDefaultUdonSharpBehaviourHeader(this.target);
-
             Collection target = (Collection)this.target;
             object[] data = target.ToArray();
 

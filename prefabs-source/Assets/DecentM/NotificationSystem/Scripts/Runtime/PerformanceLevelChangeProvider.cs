@@ -1,10 +1,10 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 
-using DecentM.Prefabs.Performance;
-using DecentM.Prefabs.Performance.Plugins;
+using DecentM.PerformanceGovernor;
+using DecentM.PerformanceGovernor.Plugins;
 
-namespace DecentM.Prefabs.Notifications.Providers
+namespace DecentM.NotificationSystem.Providers
 {
     public class PerformanceLevelChangeProvider : PerformanceGovernorPlugin
     {

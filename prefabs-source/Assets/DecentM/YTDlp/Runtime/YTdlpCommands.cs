@@ -1,9 +1,9 @@
 ﻿using System;
-using System.Collections;
-
 using UnityEngine;
 
-namespace DecentM.Shared.YTdlp
+using DecentM.Shared;
+
+namespace DecentM.YTdlp
 {
     #region Structs
 

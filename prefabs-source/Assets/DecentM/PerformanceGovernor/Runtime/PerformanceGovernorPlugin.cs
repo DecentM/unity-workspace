@@ -1,6 +1,6 @@
-﻿using DecentM.Prefabs.Pubsub;
+﻿using DecentM.Pubsub;
 
-namespace DecentM.Prefabs.Performance.Plugins
+namespace DecentM.PerformanceGovernor.Plugins
 {
     public abstract class PerformanceGovernorPlugin : PubsubSubscriber
     {

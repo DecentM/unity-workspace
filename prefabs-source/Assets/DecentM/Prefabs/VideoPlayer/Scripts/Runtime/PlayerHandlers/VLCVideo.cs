@@ -6,7 +6,7 @@ using UnityEngine;
 using LibVLCSharp;
 
 using DecentM.Shared;
-using DecentM.Shared.YTdlp;
+using DecentM.YTdlp;
 using DecentM.Mods.CustomComponents.VideoPlayer;
 
 namespace DecentM.Prefabs.VideoPlayer.Handlers

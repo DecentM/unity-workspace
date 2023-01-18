@@ -1,15 +1,16 @@
 {
-    "name": "DecentM.CustomComponents",
+    "name": "DecentM.NotificationSystem",
     "references": [
-        "GUID:22291c8b6b3497a46b4a31a80494e68d"
+        "Unity.TextMeshPro",
+        "DecentM.Shared",
+        "DecentM.PerformanceGovernor",
+        "DecentM.Pubsub"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
-    "overrideReferences": true,
-    "precompiledReferences": [
-        "LibVLCSharp.dll"
-    ],
+    "overrideReferences": false,
+    "precompiledReferences": [],
     "autoReferenced": true,
     "defineConstraints": [],
     "versionDefines": [],

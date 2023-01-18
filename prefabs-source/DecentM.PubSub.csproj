@@ -8,11 +8,12 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <RootNamespace></RootNamespace>
-    <ProjectGuid>{A7E85C1F-A9E4-55E8-7EDD-60E613E9A990}</ProjectGuid>
+    <RootNamespace>
+    </RootNamespace>
+    <ProjectGuid>{04972041-0DE1-FFF7-9540-9E6E6EDF79E2}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <AssemblyName>DecentM.Shared</AssemblyName>
+    <AssemblyName>DecentM.Pubsub</AssemblyName>
     <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <BaseDirectory>.</BaseDirectory>
@@ -53,13 +54,11 @@
     <UnityVersion>2019.4.31f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Assets\DecentM\Shared\Runtime\DBehaviour.cs" />
-    <Compile Include="Assets\DecentM\Shared\Runtime\DCoroutine.cs" />
-    <Compile Include="Assets\DecentM\Shared\Runtime\Paralellism.cs" />
-    <Compile Include="Assets\DecentM\Shared\Runtime\ProcessManager.cs" />
+    <Compile Include="Assets\DecentM\PubSub\Runtime\Pubsub.cs" />
+    <Compile Include="Assets\DecentM\PubSub\Runtime\PubsubSubscriber.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\DecentM\Shared\Runtime\DecentM.Shared.asmdef" />
+    <None Include="Assets\DecentM\PubSub\Runtime\DecentM.Pubsub.asmdef" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -652,6 +651,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="DecentM.Shared.csproj">
+      <Project>{A7E85C1F-A9E4-55E8-7EDD-60E613E9A990}</Project>
+      <Name>DecentM.Shared</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

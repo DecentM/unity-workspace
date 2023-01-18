@@ -59,43 +59,11 @@
     <Compile Include="Assets\DecentM\Prefabs\LibDecentM\PlayerList.cs" />
     <Compile Include="Assets\DecentM\Prefabs\LibDecentM\Scheduling.cs" />
     <Compile Include="Assets\DecentM\Prefabs\ManualCamera\ManualCamera.cs" />
-    <Compile Include="Assets\DecentM\Prefabs\NotificationSystem\Scripts\NotificationSystem.cs" />
-    <Compile Include="Assets\DecentM\Prefabs\NotificationSystem\Scripts\PerformanceLevelChangeProvider.cs" />
-    <Compile Include="Assets\DecentM\Prefabs\PerformanceGovernor\PerformanceGovernor.cs" />
-    <Compile Include="Assets\DecentM\Prefabs\PerformanceGovernor\PerformanceGovernorPlugin.cs" />
-    <Compile Include="Assets\DecentM\Prefabs\PubSub\Pubsub.cs" />
-    <Compile Include="Assets\DecentM\Prefabs\PubSub\PubsubSubscriber.cs" />
     <Compile Include="Assets\DecentM\Prefabs\UI\Dropdown\Dropdown.cs" />
     <Compile Include="Assets\DecentM\Prefabs\UI\Dropdown\DropdownOption.cs" />
     <Compile Include="Assets\DecentM\Prefabs\UI\VirtualScroll\PlainTextVirtualScrollItem.cs" />
     <Compile Include="Assets\DecentM\Prefabs\UI\VirtualScroll\VirtualScroll.cs" />
     <Compile Include="Assets\DecentM\Prefabs\UI\VirtualScroll\VirtualScrollItem.cs" />
-    <Compile Include="Assets\DecentM\Prefabs\VideoPlayer\Scripts\PlayerHandlers\PlayerHandler.cs" />
-    <Compile Include="Assets\DecentM\Prefabs\VideoPlayer\Scripts\PlayerHandlers\UnityVideo.cs" />
-    <Compile Include="Assets\DecentM\Prefabs\VideoPlayer\Scripts\PlayerHandlers\VLCVideo.cs" />
-    <Compile Include="Assets\DecentM\Prefabs\VideoPlayer\Scripts\Plugins\AutoPlayPlugin.cs" />
-    <Compile Include="Assets\DecentM\Prefabs\VideoPlayer\Scripts\Plugins\AutoRetryPlugin.cs" />
-    <Compile Include="Assets\DecentM\Prefabs\VideoPlayer\Scripts\Plugins\DebugPlugin.cs" />
-    <Compile Include="Assets\DecentM\Prefabs\VideoPlayer\Scripts\Plugins\LoadRequestHandlerPlugin.cs" />
-    <Compile Include="Assets\DecentM\Prefabs\VideoPlayer\Scripts\Plugins\Playlist\PlaylistItemRenderer.cs" />
-    <Compile Include="Assets\DecentM\Prefabs\VideoPlayer\Scripts\Plugins\Playlist\PlaylistPlayerPlugin.cs" />
-    <Compile Include="Assets\DecentM\Prefabs\VideoPlayer\Scripts\Plugins\Playlist\VideoPlaylist.cs" />
-    <Compile Include="Assets\DecentM\Prefabs\VideoPlayer\Scripts\Plugins\Playlist\VideoPlaylistUI.cs" />
-    <Compile Include="Assets\DecentM\Prefabs\VideoPlayer\Scripts\Plugins\RenderTextureExportPlugin.cs" />
-    <Compile Include="Assets\DecentM\Prefabs\VideoPlayer\Scripts\Plugins\ResolutionUpdaterPlugin.cs" />
-    <Compile Include="Assets\DecentM\Prefabs\VideoPlayer\Scripts\Plugins\ScreenAnalysisPlugin.cs" />
-    <Compile Include="Assets\DecentM\Prefabs\VideoPlayer\Scripts\Plugins\SkipToTimestampPlugin.cs" />
-    <Compile Include="Assets\DecentM\Prefabs\VideoPlayer\Scripts\Plugins\SoundEffectsPlugin.cs" />
-    <Compile Include="Assets\DecentM\Prefabs\VideoPlayer\Scripts\Plugins\SubtitlesPlugin.cs" />
-    <Compile Include="Assets\DecentM\Prefabs\VideoPlayer\Scripts\Plugins\TextureReferencePlugin.cs" />
-    <Compile Include="Assets\DecentM\Prefabs\VideoPlayer\Scripts\Plugins\TextureUpdaterPlugin.cs" />
-    <Compile Include="Assets\DecentM\Prefabs\VideoPlayer\Scripts\Plugins\UIPlugin.cs" />
-    <Compile Include="Assets\DecentM\Prefabs\VideoPlayer\Scripts\Plugins\URLVerifierPlugin.cs" />
-    <Compile Include="Assets\DecentM\Prefabs\VideoPlayer\Scripts\Plugins\VideoPlayerPlugin.cs" />
-    <Compile Include="Assets\DecentM\Prefabs\VideoPlayer\Scripts\ScreenHandler.cs" />
-    <Compile Include="Assets\DecentM\Prefabs\VideoPlayer\Scripts\VideoPlayerEvents.cs" />
-    <Compile Include="Assets\DecentM\Prefabs\VideoPlayer\Scripts\VideoPlayerSystem.cs" />
-    <Compile Include="Assets\DecentM\Prefabs\VideoPlayer\Scripts\VideoPlayerUI.cs" />
     <Compile Include="Assets\DecentM\Prefabs\VideoRatelimit\Scripts\PlayerLoadMonitoring.cs" />
     <Compile Include="Assets\DecentM\Prefabs\VideoRatelimit\Scripts\VideoRatelimitSystem.cs" />
   </ItemGroup>
@@ -697,13 +665,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="DecentM.CustomComponents.csproj">
-      <Project>{B8F2DBA1-B3D4-F08B-35AD-9166C9640BCE}</Project>
-      <Name>DecentM.CustomComponents</Name>
-    </ProjectReference>
-    <ProjectReference Include="DecentM.Shared.csproj">
-      <Project>{A7E85C1F-A9E4-55E8-7EDD-60E613E9A990}</Project>
-      <Name>DecentM.Shared</Name>
+    <ProjectReference Include="DecentM.Shared.Editor.csproj">
+      <Project>{579F34EF-3B2C-A1B4-93F3-268F8D78EB14}</Project>
+      <Name>DecentM.Shared.Editor</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

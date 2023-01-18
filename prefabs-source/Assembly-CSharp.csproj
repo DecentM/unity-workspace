@@ -53,10 +53,13 @@
     <UnityVersion>2019.4.31f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Assets\DecentM\Shared\ProcessManager.cs" />
-    <Compile Include="Assets\DecentM\Shared\Runtime\DBehaviour.cs" />
-    <Compile Include="Assets\DecentM\Shared\Runtime\Paralellism.cs" />
-    <Compile Include="Assets\DecentM\Shared\YTDlp\YTdlpCommands.cs" />
+    <Compile Include="Assets\DecentM\CustomComponents\StatsD\Demo\DemoStatsDSender.cs" />
+    <Compile Include="Assets\DecentM\CustomComponents\StatsD\StatsDClient.cs" />
+    <Compile Include="Assets\DecentM\CustomComponents\VLCPlayer\Scripts\Demo\VLCPlayerDemo.cs" />
+    <Compile Include="Assets\DecentM\CustomComponents\VLCPlayer\Scripts\LibVLCInstance.cs" />
+    <Compile Include="Assets\DecentM\CustomComponents\VLCPlayer\Scripts\VLCPlayer.cs" />
+    <Compile Include="Assets\DecentM\NotificationSystem\Scripts\Runtime\NotificationSystem.cs" />
+    <Compile Include="Assets\DecentM\NotificationSystem\Scripts\Runtime\PerformanceLevelChangeProvider.cs" />
     <Compile Include="Assets\VLCUnity\Demos\Scripts\VLCMinimalPlayback.cs" />
     <Compile Include="Assets\VLCUnity\Demos\Scripts\VLCPlayerExample.cs" />
     <Compile Include="Assets\VLCUnity\Demos\Scripts\VLCPlayerExampleCamera.cs" />
@@ -296,7 +299,6 @@
     <None Include="Assets\VLCUnity\Plugins\x86_64\plugins\audio_filter\libsoxr_plugin.dll" />
     <None Include="Assets\VLCUnity\Plugins\x86_64\plugins\video_output\libvmem_plugin.dll" />
     <None Include="Assets\VLCUnity\Plugins\x86_64\plugins\nvdec\libnvdec_chroma_plugin.dll" />
-    <None Include="Assets\DecentM\Shared\Runtime\DecentM.Shared.asmdef" />
     <None Include="Assets\VLCUnity\Plugins\x86_64\plugins\codec\libtwolame_plugin.dll" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
     <None Include="Assets\VLCUnity\Plugins\x86_64\plugins\demux\libwav_plugin.dll" />
@@ -1081,9 +1083,9 @@
       <Project>{797196E7-0705-8851-2526-65B3A4A2CBE6}</Project>
       <Name>DecentM.Prefabs</Name>
     </ProjectReference>
-    <ProjectReference Include="DecentM.CustomComponents.csproj">
-      <Project>{B8F2DBA1-B3D4-F08B-35AD-9166C9640BCE}</Project>
-      <Name>DecentM.CustomComponents</Name>
+    <ProjectReference Include="DecentM.Shared.csproj">
+      <Project>{A7E85C1F-A9E4-55E8-7EDD-60E613E9A990}</Project>
+      <Name>DecentM.Shared</Name>
     </ProjectReference>
     <ProjectReference Include="DecentM.Collections.csproj">
       <Project>{4AC5AD01-3A85-465B-AD7D-E365CB6768E3}</Project>
@@ -1093,9 +1095,25 @@
       <Project>{EF728172-EE45-717F-A694-B0A59D237BAB}</Project>
       <Name>DecentM.Collections.Editor</Name>
     </ProjectReference>
-    <ProjectReference Include="DecentM.Shared.csproj">
-      <Project>{A7E85C1F-A9E4-55E8-7EDD-60E613E9A990}</Project>
-      <Name>DecentM.Shared</Name>
+    <ProjectReference Include="DecentM.Shared.Editor.csproj">
+      <Project>{579F34EF-3B2C-A1B4-93F3-268F8D78EB14}</Project>
+      <Name>DecentM.Shared.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="DecentM.YTDlp.csproj">
+      <Project>{E3329006-4DA5-F0A9-0016-AFCA57038B0B}</Project>
+      <Name>DecentM.YTDlp</Name>
+    </ProjectReference>
+    <ProjectReference Include="DecentM.VideoPlayer.csproj">
+      <Project>{C09956AF-97C1-4321-F33D-E64F11494DB6}</Project>
+      <Name>DecentM.VideoPlayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="DecentM.Pubsub.csproj">
+      <Project>{D0F12F58-B1D9-4FD2-4AE2-F7501D1B97F9}</Project>
+      <Name>DecentM.Pubsub</Name>
+    </ProjectReference>
+    <ProjectReference Include="DecentM.PerformanceGovernor.csproj">
+      <Project>{95030DBB-ED10-41A3-20CF-6FF6BBF70F09}</Project>
+      <Name>DecentM.PerformanceGovernor</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

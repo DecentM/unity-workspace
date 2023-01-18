@@ -1,8 +1,10 @@
 ﻿using UnityEngine;
 
-namespace DecentM.Prefabs.Pubsub
+using DecentM.Shared;
+
+namespace DecentM.Pubsub
 {
-    public abstract class PubsubSubscriber : MonoBehaviour
+    public abstract class PubsubSubscriber : DBehaviour
     {
         public PubsubHost[] pubsubHosts;
         private int[] subscriptions;

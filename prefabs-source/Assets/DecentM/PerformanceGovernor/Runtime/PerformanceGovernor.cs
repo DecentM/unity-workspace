@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
-using DecentM.Prefabs.Pubsub;
+using DecentM.Pubsub;
 
-namespace DecentM.Prefabs.Performance
+namespace DecentM.PerformanceGovernor
 {
     public enum PerformanceGovernorMode
     {

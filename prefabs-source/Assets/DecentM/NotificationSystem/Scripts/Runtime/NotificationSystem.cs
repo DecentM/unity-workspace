@@ -2,10 +2,11 @@
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using DecentM.Shared;
 
-namespace DecentM.Prefabs.Notifications
+namespace DecentM.NotificationSystem
 {
-    public class NotificationSystem : MonoBehaviour
+    public class NotificationSystem : DBehaviour
     {
         public GameObject[] overlayObjects;
         public Camera rendererCamera;

@@ -3,6 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
+using DecentM.Shared;
+
 using UnityEngine;
 
 namespace DecentM.Shared
