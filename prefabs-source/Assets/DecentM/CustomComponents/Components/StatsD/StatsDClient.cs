@@ -145,10 +145,17 @@ namespace DecentM.Mods.CustomComponents.StatsD
             string packet = sb.ToString();
             byte[] sendBytes = Encoding.ASCII.GetBytes(packet);
 
-            if (this.udp != null)
-                this.udp.Send(sendBytes, sendBytes.Length);
-
-            UnityEngine.Debug.Log($"[StatsDClient] Sent {sendBytes.Length} bytes to {host}:{port}. Queue size: {this.sendQueue.Count}\nMessage: {packet}");
+            this.udp.SendAsync(sendBytes, sendBytes.Length, this.host, this.port)
+                .ContinueWith(sendTask => {
+                    if (sendTask.IsCompletedSuccessfully)
+                    {
+                        UnityEngine.Debug.Log($"[StatsDClient] Sent {sendBytes.Length} bytes to {host}:{port}. Queue size: {this.sendQueue.Count}\nMessage: {packet}");
+                    }
+                    else
+                    {
+                        UnityEngine.Debug.LogError("Failed to send metrics: " + sendTask.Exception);
+                    }
+                });
         }
 
         #endregion
