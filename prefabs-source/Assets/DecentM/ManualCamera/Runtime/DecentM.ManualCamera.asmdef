@@ -1,0 +1,15 @@
+{
+    "name": "DecentM.ManualCamera",
+    "references": [
+        "GUID:a85d1822798dd5748abc65cd720f5b56"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace DecentM.Mods.CustomComponents.VideoPlayer
+namespace DecentM.CustomComponents.VLCPlayer
 {
     public class VLCPlayerDemo : MonoBehaviour
     {

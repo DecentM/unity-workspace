@@ -1,0 +1,23 @@
+{
+    "name": "DecentM.VideoPlayer.Editor",
+    "references": [
+        "GUID:db1a799dca9fce14d86eed21e1f14b5d",
+        "GUID:22291c8b6b3497a46b4a31a80494e68d",
+        "GUID:0acc523941302664db1f4e527237feb3",
+        "GUID:38626b9f0b786b2408aab9704604a413",
+        "GUID:a85d1822798dd5748abc65cd720f5b56",
+        "GUID:80d8201452ffbb54b90d7d0b6735aba0",
+        "GUID:e231e6cf10d5f9a46a7f7d7642b5818a"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

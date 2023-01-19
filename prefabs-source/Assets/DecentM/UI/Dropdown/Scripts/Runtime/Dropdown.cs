@@ -2,7 +2,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace DecentM.Prefabs.UI
+namespace DecentM.UI
 {
     public class Dropdown : MonoBehaviour
     {

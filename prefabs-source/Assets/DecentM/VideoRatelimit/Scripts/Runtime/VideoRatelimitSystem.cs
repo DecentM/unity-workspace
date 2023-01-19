@@ -1,14 +1,14 @@
-﻿using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 using DecentM.Shared;
+using DecentM.Collections;
 
 namespace DecentM.VideoRatelimit
 {
     public class VideoRatelimitSystem : DBehaviour
     {
         public float ratelimitSeconds = 5.2f;
-        public Queue<MonoBehaviour> queue = new Queue<MonoBehaviour>();
+        public Queue queue = new Queue();
 
         public const string PlaybackWindowEvent = "OnPlaybackWindow";
 
@@ -43,7 +43,7 @@ namespace DecentM.VideoRatelimit
             this.isWaiting = true;
         }
 
-        public void RequestPlaybackWindow(MonoBehaviour behaviour)
+        public void RequestPlaybackWindow(DBehaviour behaviour)
         {
             this.queue.Enqueue(behaviour);
         }
@@ -53,7 +53,7 @@ namespace DecentM.VideoRatelimit
             if (this.queue.Count <= 0)
                 return;
 
-            MonoBehaviour behaviour = this.queue.Dequeue();
+            DBehaviour behaviour = (DBehaviour)this.queue.Dequeue();
             if (behaviour == null)
                 return;
 

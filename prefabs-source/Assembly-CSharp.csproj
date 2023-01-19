@@ -55,14 +55,6 @@
   <ItemGroup>
     <Compile Include="Assets\DecentM\CustomComponents\StatsD\Demo\DemoStatsDSender.cs" />
     <Compile Include="Assets\DecentM\CustomComponents\StatsD\StatsDClient.cs" />
-    <Compile Include="Assets\DecentM\CustomComponents\VLCPlayer\Scripts\Demo\VLCPlayerDemo.cs" />
-    <Compile Include="Assets\DecentM\CustomComponents\VLCPlayer\Scripts\LibVLCInstance.cs" />
-    <Compile Include="Assets\DecentM\CustomComponents\VLCPlayer\Scripts\VLCPlayer.cs" />
-    <Compile Include="Assets\DecentM\UI\Dropdown\Dropdown.cs" />
-    <Compile Include="Assets\DecentM\UI\Dropdown\DropdownOption.cs" />
-    <Compile Include="Assets\DecentM\UI\VirtualScroll\PlainTextVirtualScrollItem.cs" />
-    <Compile Include="Assets\DecentM\UI\VirtualScroll\VirtualScroll.cs" />
-    <Compile Include="Assets\DecentM\UI\VirtualScroll\VirtualScrollItem.cs" />
     <Compile Include="Assets\VLCUnity\Demos\Scripts\VLCMinimalPlayback.cs" />
     <Compile Include="Assets\VLCUnity\Demos\Scripts\VLCPlayerExample.cs" />
     <Compile Include="Assets\VLCUnity\Demos\Scripts\VLCPlayerExampleCamera.cs" />
@@ -1085,10 +1077,6 @@
       <Project>{A5B17C64-F7A7-11F1-17CF-F902BD8227AE}</Project>
       <Name>WorldScripts</Name>
     </ProjectReference>
-    <ProjectReference Include="DecentM.Prefabs.csproj">
-      <Project>{797196E7-0705-8851-2526-65B3A4A2CBE6}</Project>
-      <Name>DecentM.Prefabs</Name>
-    </ProjectReference>
     <ProjectReference Include="DecentM.Shared.csproj">
       <Project>{A7E85C1F-A9E4-55E8-7EDD-60E613E9A990}</Project>
       <Name>DecentM.Shared</Name>
@@ -1109,6 +1097,14 @@
       <Project>{95030DBB-ED10-41A3-20CF-6FF6BBF70F09}</Project>
       <Name>DecentM.PerformanceGovernor</Name>
     </ProjectReference>
+    <ProjectReference Include="DecentM.UI.csproj">
+      <Project>{F00AB0C7-5B2D-0FE4-F661-D10D7C693973}</Project>
+      <Name>DecentM.UI</Name>
+    </ProjectReference>
+    <ProjectReference Include="DecentM.CustomComponents.VLCPlayer.csproj">
+      <Project>{6D127678-E9B2-918F-2697-91D29308627F}</Project>
+      <Name>DecentM.CustomComponents.VLCPlayer</Name>
+    </ProjectReference>
     <ProjectReference Include="DecentM.Collections.Editor.csproj">
       <Project>{EF728172-EE45-717F-A694-B0A59D237BAB}</Project>
       <Name>DecentM.Collections.Editor</Name>
@@ -1121,6 +1117,14 @@
       <Project>{C09956AF-97C1-4321-F33D-E64F11494DB6}</Project>
       <Name>DecentM.VideoPlayer</Name>
     </ProjectReference>
+    <ProjectReference Include="DecentM.VideoPlayer.Editor.csproj">
+      <Project>{277A0A87-3F78-A52F-AA90-1C343D0DA766}</Project>
+      <Name>DecentM.VideoPlayer.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="DecentM.PerformanceGovernor.Editor.csproj">
+      <Project>{30D1E6F8-7C69-6DC4-3921-318F0CBFF88D}</Project>
+      <Name>DecentM.PerformanceGovernor.Editor</Name>
+    </ProjectReference>
     <ProjectReference Include="DecentM.YTDlp.csproj">
       <Project>{E3329006-4DA5-F0A9-0016-AFCA57038B0B}</Project>
       <Name>DecentM.YTDlp</Name>
@@ -1128,6 +1132,18 @@
     <ProjectReference Include="DecentM.VideoRatelimit.csproj">
       <Project>{0BDFC89A-0BCD-ED73-6383-7D266B41252C}</Project>
       <Name>DecentM.VideoRatelimit</Name>
+    </ProjectReference>
+    <ProjectReference Include="DecentM.ManualCamera.csproj">
+      <Project>{AA98F575-D4C7-12FC-820F-CA0896187409}</Project>
+      <Name>DecentM.ManualCamera</Name>
+    </ProjectReference>
+    <ProjectReference Include="DecentM.VideoRatelimit.Editor.csproj">
+      <Project>{E21A620B-E637-EDE7-7CFB-E1EFF8B9534B}</Project>
+      <Name>DecentM.VideoRatelimit.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="DecentM.PlayerList.csproj">
+      <Project>{64A5179D-ECC5-DB0C-F734-736BF19C9B3B}</Project>
+      <Name>DecentM.PlayerList</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

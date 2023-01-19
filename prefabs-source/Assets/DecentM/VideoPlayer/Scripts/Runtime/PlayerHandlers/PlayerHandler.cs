@@ -1,5 +1,7 @@
 ﻿using UnityEngine;
 
+using DecentM.Shared;
+
 namespace DecentM.VideoPlayer.Handlers
 {
     public enum VideoPlayerHandlerType
@@ -10,7 +12,7 @@ namespace DecentM.VideoPlayer.Handlers
         VLC,
     }
 
-    public abstract class PlayerHandler : MonoBehaviour
+    public abstract class PlayerHandler : DBehaviour
     {
         public abstract VideoPlayerHandlerType type { get; }
         public VideoPlayerEvents events;

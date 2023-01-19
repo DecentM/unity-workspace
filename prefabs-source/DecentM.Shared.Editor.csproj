@@ -54,9 +54,14 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Assets\DecentM\Shared\Editor\Inspector.cs" />
+    <Compile Include="Assets\DecentM\Shared\Editor\MaterialIcons\Mappings.cs" />
+    <Compile Include="Assets\DecentM\Shared\Editor\MaterialIcons\MaterialIcons.cs" />
+    <Compile Include="Assets\DecentM\Shared\Editor\SelfLocatorImporter.cs" />
+    <Compile Include="Assets\DecentM\Shared\Editor\SelfLocatorInspector.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\DecentM\Shared\Editor\DecentM.Shared.Editor.asmdef" />
+    <None Include="Assets\DecentM\Shared\Editor\MaterialIcons\LICENSE.txt" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -658,6 +663,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="DecentM.Shared.csproj">
+      <Project>{A7E85C1F-A9E4-55E8-7EDD-60E613E9A990}</Project>
+      <Name>DecentM.Shared</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

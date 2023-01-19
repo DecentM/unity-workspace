@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using TMPro;
 
-namespace DecentM.Prefabs.UI
+namespace DecentM.UI
 {
     public class DropdownOption : MonoBehaviour
     {

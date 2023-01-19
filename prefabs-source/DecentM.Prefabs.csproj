@@ -53,12 +53,7 @@
     <UnityVersion>2019.4.31f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Assets\DecentM\Prefabs\CustomEvent\TimedCustomEvent.cs" />
     <Compile Include="Assets\DecentM\Prefabs\LibDecentM\Debugging.cs" />
-    <Compile Include="Assets\DecentM\Prefabs\LibDecentM\LibDecentM.cs" />
-    <Compile Include="Assets\DecentM\Prefabs\LibDecentM\PlayerList.cs" />
-    <Compile Include="Assets\DecentM\Prefabs\LibDecentM\Scheduling.cs" />
-    <Compile Include="Assets\DecentM\Prefabs\ManualCamera\ManualCamera.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\DecentM\Prefabs\DecentM.Prefabs.asmdef" />

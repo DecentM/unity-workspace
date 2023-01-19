@@ -63,47 +63,16 @@
     <Compile Include="Assets\DecentM\Editor\CombinationsGenerator.cs" />
     <Compile Include="Assets\DecentM\Editor\ComponentCollector.cs" />
     <Compile Include="Assets\DecentM\Editor\Inspector.cs" />
-    <Compile Include="Assets\DecentM\Editor\MaterialIcons\Mappings.cs" />
-    <Compile Include="Assets\DecentM\Editor\MaterialIcons\MaterialIcons.cs" />
     <Compile Include="Assets\DecentM\Editor\RandomStringGenerator.cs" />
-    <Compile Include="Assets\DecentM\Editor\SelfLocator\SelfLocatorAsset.cs" />
-    <Compile Include="Assets\DecentM\Editor\SelfLocator\SelfLocatorImporter.cs" />
-    <Compile Include="Assets\DecentM\Editor\SelfLocator\SelfLocatorInspector.cs" />
     <Compile Include="Assets\DecentM\Editor\TextProcessing.cs" />
     <Compile Include="Assets\DecentM\Editor\Utilities.cs" />
-    <Compile Include="Assets\DecentM\Editor\VideoPlayer\Importers\SubtitleImporter.cs" />
-    <Compile Include="Assets\DecentM\Editor\VideoPlayer\Inspectors\SubtitleImporterInspector.cs" />
-    <Compile Include="Assets\DecentM\Editor\VideoPlayer\Inspectors\VideoPlayerUIInspector.cs" />
-    <Compile Include="Assets\DecentM\Editor\VideoPlayer\Inspectors\VideoPlaylistInspector.cs" />
-    <Compile Include="Assets\DecentM\Editor\VideoPlayer\PluginManager.cs" />
-    <Compile Include="Assets\DecentM\Editor\VideoPlayer\Subtitles\Abstracts.cs" />
-    <Compile Include="Assets\DecentM\Editor\VideoPlayer\Subtitles\Ast.cs" />
-    <Compile Include="Assets\DecentM\Editor\VideoPlayer\Subtitles\Compiler.cs" />
-    <Compile Include="Assets\DecentM\Editor\VideoPlayer\Subtitles\FileFormats\SRT\Lexer.cs" />
-    <Compile Include="Assets\DecentM\Editor\VideoPlayer\Subtitles\FileFormats\SRT\Parser.cs" />
-    <Compile Include="Assets\DecentM\Editor\VideoPlayer\Subtitles\FileFormats\SRT\Writer.cs" />
-    <Compile Include="Assets\DecentM\Editor\VideoPlayer\Subtitles\FileFormats\VSI\Lexer.cs" />
-    <Compile Include="Assets\DecentM\Editor\VideoPlayer\Subtitles\FileFormats\VSI\Parser.cs" />
-    <Compile Include="Assets\DecentM\Editor\VideoPlayer\Subtitles\FileFormats\VSI\Utils.cs" />
-    <Compile Include="Assets\DecentM\Editor\VideoPlayer\Subtitles\FileFormats\VSI\Writer.cs" />
-    <Compile Include="Assets\DecentM\Editor\VideoPlayer\Subtitles\FileFormats\VTT\Lexer.cs" />
-    <Compile Include="Assets\DecentM\Editor\VideoPlayer\Subtitles\FileFormats\VTT\Parser.cs" />
-    <Compile Include="Assets\DecentM\Editor\VideoPlayer\Subtitles\FileFormats\VTT\Writer.cs" />
-    <Compile Include="Assets\DecentM\Editor\VideoPlayer\Subtitles\Tests\Misc.cs" />
-    <Compile Include="Assets\DecentM\Editor\VideoPlayer\Subtitles\Tests\Srt.cs" />
-    <Compile Include="Assets\DecentM\Editor\VideoPlayer\Subtitles\Tests\Vtt.cs" />
-    <Compile Include="Assets\DecentM\Editor\VideoPlayer\Subtitles\Transformer.cs" />
-    <Compile Include="Assets\DecentM\Editor\VideoPlayer\VideoPlayerAutoFixer.cs" />
-    <Compile Include="Assets\DecentM\Editor\VideoRatelimit\VideoRatelimitAutoFixer.cs" />
-    <Compile Include="Assets\DecentM\PerformanceGovernor\Editor\PerformanceGovernorInspector.cs" />
+    <Compile Include="Assets\DecentM\VideoRatelimit\Scripts\Editor\VideoRatelimitAutoFixer.cs" />
     <Compile Include="Assets\Editor\AnimationRefactor.cs" />
     <Compile Include="Assets\Editor\ReplaceWithPrefab.cs" />
     <Compile Include="Assets\VLCUnity\Editor\Build.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\DecentM\Editor\MaterialIcons\LICENSE.txt" />
     <None Include="Assets\NuGet\Editor\NugetForUnity.dll" />
-    <None Include="Assets\DecentM\PerformanceGovernor\Editor\PerformanceGovernorInspector.uss" />
     <None Include="Assets\DecentM\Fonts\Editor\unicode-ranges.txt" />
   </ItemGroup>
   <ItemGroup>
@@ -762,6 +731,14 @@
       <Project>{95030DBB-ED10-41A3-20CF-6FF6BBF70F09}</Project>
       <Name>DecentM.PerformanceGovernor</Name>
     </ProjectReference>
+    <ProjectReference Include="DecentM.UI.csproj">
+      <Project>{F00AB0C7-5B2D-0FE4-F661-D10D7C693973}</Project>
+      <Name>DecentM.UI</Name>
+    </ProjectReference>
+    <ProjectReference Include="DecentM.CustomComponents.VLCPlayer.csproj">
+      <Project>{6D127678-E9B2-918F-2697-91D29308627F}</Project>
+      <Name>DecentM.CustomComponents.VLCPlayer</Name>
+    </ProjectReference>
     <ProjectReference Include="DecentM.Collections.Editor.csproj">
       <Project>{EF728172-EE45-717F-A694-B0A59D237BAB}</Project>
       <Name>DecentM.Collections.Editor</Name>
@@ -774,6 +751,14 @@
       <Project>{C09956AF-97C1-4321-F33D-E64F11494DB6}</Project>
       <Name>DecentM.VideoPlayer</Name>
     </ProjectReference>
+    <ProjectReference Include="DecentM.VideoPlayer.Editor.csproj">
+      <Project>{277A0A87-3F78-A52F-AA90-1C343D0DA766}</Project>
+      <Name>DecentM.VideoPlayer.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="DecentM.PerformanceGovernor.Editor.csproj">
+      <Project>{30D1E6F8-7C69-6DC4-3921-318F0CBFF88D}</Project>
+      <Name>DecentM.PerformanceGovernor.Editor</Name>
+    </ProjectReference>
     <ProjectReference Include="DecentM.YTDlp.csproj">
       <Project>{E3329006-4DA5-F0A9-0016-AFCA57038B0B}</Project>
       <Name>DecentM.YTDlp</Name>
@@ -782,9 +767,9 @@
       <Project>{0BDFC89A-0BCD-ED73-6383-7D266B41252C}</Project>
       <Name>DecentM.VideoRatelimit</Name>
     </ProjectReference>
-    <ProjectReference Include="DecentM.UI.csproj">
-      <Project>{F00AB0C7-5B2D-0FE4-F661-D10D7C693973}</Project>
-      <Name>DecentM.UI</Name>
+    <ProjectReference Include="DecentM.ManualCamera.csproj">
+      <Project>{AA98F575-D4C7-12FC-820F-CA0896187409}</Project>
+      <Name>DecentM.ManualCamera</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

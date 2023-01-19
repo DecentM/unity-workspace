@@ -4,7 +4,6 @@ using TMPro;
 
 using UnityEngine.UI;
 
-using DecentM.UI;
 using DecentM.VideoPlayer.Handlers;
 
 namespace DecentM.VideoPlayer.Plugins

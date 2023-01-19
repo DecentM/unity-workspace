@@ -1,0 +1,17 @@
+{
+    "name": "DecentM.PlayerList",
+    "references": [
+        "GUID:6bee0473e9331f84b962b17ad2162c57",
+        "GUID:a85d1822798dd5748abc65cd720f5b56",
+        "GUID:80d8201452ffbb54b90d7d0b6735aba0"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using LibVLCSharp;
 
-namespace DecentM.Mods.CustomComponents.VideoPlayer
+namespace DecentM.CustomComponents.VLCPlayer
 {
     // LibVLC can only exist once, so we give others access here in case they need it
     public static class LibVLCSingleton

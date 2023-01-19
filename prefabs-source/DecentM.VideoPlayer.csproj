@@ -693,6 +693,14 @@
       <Project>{0BDFC89A-0BCD-ED73-6383-7D266B41252C}</Project>
       <Name>DecentM.VideoRatelimit</Name>
     </ProjectReference>
+    <ProjectReference Include="DecentM.CustomComponents.VLCPlayer.csproj">
+      <Project>{6D127678-E9B2-918F-2697-91D29308627F}</Project>
+      <Name>DecentM.CustomComponents.VLCPlayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="DecentM.UI.csproj">
+      <Project>{F00AB0C7-5B2D-0FE4-F661-D10D7C693973}</Project>
+      <Name>DecentM.UI</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

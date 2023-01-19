@@ -7,7 +7,7 @@ using System.Collections.Generic;
 /// LibVLCSharp docs: https://code.videolan.org/videolan/LibVLCSharp/-/blob/master/docs/home.md
 /// LibVLC parameters: https://wiki.videolan.org/VLC_command-line_help/
 
-namespace DecentM.Mods.CustomComponents.VideoPlayer
+namespace DecentM.CustomComponents.VLCPlayer
 {
     public class VLCPlayer : MonoBehaviour
     {

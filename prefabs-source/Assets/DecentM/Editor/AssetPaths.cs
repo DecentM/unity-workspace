@@ -3,7 +3,7 @@ using UnityEditor;
 
 using System.IO;
 
-using DecentM.EditorTools.SelfLocator;
+using DecentM.Shared.SelfLocator;
 
 namespace DecentM.EditorTools
 {

@@ -7,7 +7,7 @@ using LibVLCSharp;
 
 using DecentM.Shared;
 using DecentM.YTdlp;
-using DecentM.Mods.CustomComponents.VideoPlayer;
+using DecentM.CustomComponents.VLCPlayer;
 
 namespace DecentM.VideoPlayer.Handlers
 {

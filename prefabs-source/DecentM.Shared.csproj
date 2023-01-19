@@ -57,6 +57,7 @@
     <Compile Include="Assets\DecentM\Shared\Runtime\DCoroutine.cs" />
     <Compile Include="Assets\DecentM\Shared\Runtime\Paralellism.cs" />
     <Compile Include="Assets\DecentM\Shared\Runtime\ProcessManager.cs" />
+    <Compile Include="Assets\DecentM\Shared\Runtime\SelfLocatorAsset.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\DecentM\Shared\Runtime\DecentM.Shared.asmdef" />

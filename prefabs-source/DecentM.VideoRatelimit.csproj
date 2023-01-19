@@ -654,6 +654,14 @@
       <Project>{A7E85C1F-A9E4-55E8-7EDD-60E613E9A990}</Project>
       <Name>DecentM.Shared</Name>
     </ProjectReference>
+    <ProjectReference Include="DecentM.Collections.csproj">
+      <Project>{4AC5AD01-3A85-465B-AD7D-E365CB6768E3}</Project>
+      <Name>DecentM.Collections</Name>
+    </ProjectReference>
+    <ProjectReference Include="DecentM.Shared.Editor.csproj">
+      <Project>{579F34EF-3B2C-A1B4-93F3-268F8D78EB14}</Project>
+      <Name>DecentM.Shared.Editor</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
