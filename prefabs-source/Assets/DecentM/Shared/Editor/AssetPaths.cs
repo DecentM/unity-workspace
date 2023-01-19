@@ -1,11 +1,9 @@
 ﻿using UnityEngine;
 using UnityEditor;
 
-using System.IO;
+using DecentM.Shared.Editor.SelfLocator;
 
-using DecentM.Shared.SelfLocator;
-
-namespace DecentM.EditorTools
+namespace DecentM.Shared.Editor
 {
     public static class AssetPaths
     {

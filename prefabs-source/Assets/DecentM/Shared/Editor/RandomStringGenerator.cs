@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace DecentM.EditorTools
+namespace DecentM.Shared.Editor
 {
     public class RandomStringGenerator
     {

@@ -2,7 +2,7 @@
 using UnityEngine;
 using DecentM.Collections;
 
-namespace DecentM.EditorTools
+namespace DecentM.Shared.Editor
 {
     [CustomEditor(typeof(Map))]
     public class MapInspector : CollectionInspector

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
 
-namespace DecentM.EditorTools
+namespace DecentM.Shared.Editor
 {
     public class CombinationsGenerator<T>
     {

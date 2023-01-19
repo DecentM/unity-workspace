@@ -8,16 +8,16 @@ using System.Text;
 using UnityEditor;
 #endif
 
-namespace DecentM.EditorTools
+namespace DecentM.Shared.Editor
 {
 #if UNITY_EDITOR
     public static class AsyncProgress
     {
-        private static readonly MethodInfo _displayProgressBar = typeof(Editor).Assembly
+        private static readonly MethodInfo _displayProgressBar = typeof(UnityEditor.Editor).Assembly
             .GetTypes()
             .FirstOrDefault(e => e.Name == "AsyncProgressBar")
             ?.GetMethod("Display");
-        private static readonly MethodInfo _clearProgressBar = typeof(Editor).Assembly
+        private static readonly MethodInfo _clearProgressBar = typeof(UnityEditor.Editor).Assembly
             .GetTypes()
             .FirstOrDefault(e => e.Name == "AsyncProgressBar")
             ?.GetMethod("Clear");

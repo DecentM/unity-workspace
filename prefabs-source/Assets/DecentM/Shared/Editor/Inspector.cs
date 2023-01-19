@@ -3,9 +3,9 @@ using UnityEngine;
 using UnityEditor;
 using UnityEditorInternal;
 
-namespace DecentM.EditorTools
+namespace DecentM.Shared.Editor
 {
-    public class Inspector : Editor
+    public class Inspector : UnityEditor.Editor
     {
         public struct EnumerableOption
         {

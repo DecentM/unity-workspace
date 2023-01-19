@@ -53,11 +53,19 @@
     <UnityVersion>2019.4.31f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Assets\DecentM\Shared\Editor\ArabicLigaturesPreprocessor.cs" />
+    <Compile Include="Assets\DecentM\Shared\Editor\AssetPaths.cs" />
+    <Compile Include="Assets\DecentM\Shared\Editor\CombinationsGenerator.cs" />
+    <Compile Include="Assets\DecentM\Shared\Editor\ComponentCollector.cs" />
     <Compile Include="Assets\DecentM\Shared\Editor\Inspector.cs" />
     <Compile Include="Assets\DecentM\Shared\Editor\MaterialIcons\Mappings.cs" />
     <Compile Include="Assets\DecentM\Shared\Editor\MaterialIcons\MaterialIcons.cs" />
+    <Compile Include="Assets\DecentM\Shared\Editor\RandomStringGenerator.cs" />
+    <Compile Include="Assets\DecentM\Shared\Editor\SelfLocatorAsset.cs" />
     <Compile Include="Assets\DecentM\Shared\Editor\SelfLocatorImporter.cs" />
     <Compile Include="Assets\DecentM\Shared\Editor\SelfLocatorInspector.cs" />
+    <Compile Include="Assets\DecentM\Shared\Editor\TextProcessing.cs" />
+    <Compile Include="Assets\DecentM\Shared\Editor\Utilities.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\DecentM\Shared\Editor\DecentM.Shared.Editor.asmdef" />

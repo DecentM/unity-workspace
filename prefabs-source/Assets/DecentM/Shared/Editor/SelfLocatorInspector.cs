@@ -4,7 +4,7 @@ using UnityEditor.Experimental.AssetImporters;
 using UnityEditor.SceneManagement;
 using UnityEngine;
 
-namespace DecentM.Shared.SelfLocator.Editor
+namespace DecentM.Shared.Editor.SelfLocator
 {
     [CustomEditor(typeof(SelfLocatorImporter))]
     public class SelfLocatorInspector : ScriptedImporterEditor

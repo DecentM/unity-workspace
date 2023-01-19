@@ -58,15 +58,6 @@
     <Compile Include="Assets\DecentM\Collections\Tests\Editor\MapTests.cs" />
     <Compile Include="Assets\DecentM\Collections\Tests\Editor\QueueTests.cs" />
     <Compile Include="Assets\DecentM\Collections\Tests\Editor\StackTests.cs" />
-    <Compile Include="Assets\DecentM\Editor\ArabicLigaturesPreprocessor.cs" />
-    <Compile Include="Assets\DecentM\Editor\AssetPaths.cs" />
-    <Compile Include="Assets\DecentM\Editor\CombinationsGenerator.cs" />
-    <Compile Include="Assets\DecentM\Editor\ComponentCollector.cs" />
-    <Compile Include="Assets\DecentM\Editor\Inspector.cs" />
-    <Compile Include="Assets\DecentM\Editor\RandomStringGenerator.cs" />
-    <Compile Include="Assets\DecentM\Editor\TextProcessing.cs" />
-    <Compile Include="Assets\DecentM\Editor\Utilities.cs" />
-    <Compile Include="Assets\DecentM\VideoRatelimit\Scripts\Editor\VideoRatelimitAutoFixer.cs" />
     <Compile Include="Assets\Editor\AnimationRefactor.cs" />
     <Compile Include="Assets\Editor\ReplaceWithPrefab.cs" />
     <Compile Include="Assets\VLCUnity\Editor\Build.cs" />
@@ -707,10 +698,6 @@
       <Project>{A5B17C64-F7A7-11F1-17CF-F902BD8227AE}</Project>
       <Name>WorldScripts</Name>
     </ProjectReference>
-    <ProjectReference Include="DecentM.Prefabs.csproj">
-      <Project>{797196E7-0705-8851-2526-65B3A4A2CBE6}</Project>
-      <Name>DecentM.Prefabs</Name>
-    </ProjectReference>
     <ProjectReference Include="DecentM.Shared.csproj">
       <Project>{A7E85C1F-A9E4-55E8-7EDD-60E613E9A990}</Project>
       <Name>DecentM.Shared</Name>
@@ -770,6 +757,14 @@
     <ProjectReference Include="DecentM.ManualCamera.csproj">
       <Project>{AA98F575-D4C7-12FC-820F-CA0896187409}</Project>
       <Name>DecentM.ManualCamera</Name>
+    </ProjectReference>
+    <ProjectReference Include="DecentM.VideoRatelimit.Editor.csproj">
+      <Project>{E21A620B-E637-EDE7-7CFB-E1EFF8B9534B}</Project>
+      <Name>DecentM.VideoRatelimit.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="DecentM.PlayerList.csproj">
+      <Project>{64A5179D-ECC5-DB0C-F734-736BF19C9B3B}</Project>
+      <Name>DecentM.PlayerList</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

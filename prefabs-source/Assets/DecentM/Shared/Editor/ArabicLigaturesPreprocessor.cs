@@ -3,7 +3,7 @@ using System;
 using System.IO;
 using System.Text.RegularExpressions;
 
-namespace DecentM.EditorTools
+namespace DecentM.Shared.Editor
 {
     public static class ArabicText
     {

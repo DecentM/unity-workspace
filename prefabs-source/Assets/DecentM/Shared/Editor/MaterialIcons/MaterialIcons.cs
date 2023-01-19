@@ -1,10 +1,9 @@
-﻿using System.Linq;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 
 using UnityEngine;
 using UnityEditor;
 
-using DecentM.Shared.SelfLocator;
+using DecentM.Shared.Editor.SelfLocator;
 
 namespace DecentM.Shared.Icons
 {

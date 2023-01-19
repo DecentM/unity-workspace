@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-namespace DecentM.EditorTools
+namespace DecentM.Shared.Editor
 {
     public static class ComponentCollector<ComponentType>
     {

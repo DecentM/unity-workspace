@@ -1,6 +1,6 @@
 ﻿using System.Text;
 
-namespace DecentM.EditorTools
+namespace DecentM.Shared.Editor
 {
     public class TextProcessor
     {

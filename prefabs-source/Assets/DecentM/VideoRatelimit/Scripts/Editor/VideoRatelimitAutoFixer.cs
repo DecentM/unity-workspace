@@ -1,8 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEditor;
 
-using DecentM.Shared.Editor;
-using DecentM.VideoPlayer.Handlers;
+using DecentM.EditorTools;
 
 namespace DecentM.VideoRatelimit.Editor
 {

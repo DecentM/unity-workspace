@@ -1,7 +1,7 @@
 ﻿using UnityEditor;
 using UnityEngine;
 
-using DecentM.EditorTools;
+using DecentM.Shared.Editor;
 
 namespace DecentM.PerformanceGovernor.Editor
 {
