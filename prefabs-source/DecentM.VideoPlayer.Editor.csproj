@@ -56,32 +56,32 @@
     <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\DecentM\VideoPlayer\Scripts\Editor\Importers\SubtitleImporter.cs" />
-    <Compile Include="Assets\DecentM\VideoPlayer\Scripts\Editor\Inspectors\SubtitleImporterInspector.cs" />
-    <Compile Include="Assets\DecentM\VideoPlayer\Scripts\Editor\Inspectors\VideoPlayerUIInspector.cs" />
-    <Compile Include="Assets\DecentM\VideoPlayer\Scripts\Editor\Inspectors\VideoPlaylistInspector.cs" />
-    <Compile Include="Assets\DecentM\VideoPlayer\Scripts\Editor\PluginManager.cs" />
-    <Compile Include="Assets\DecentM\VideoPlayer\Scripts\Editor\Subtitles\Abstracts.cs" />
-    <Compile Include="Assets\DecentM\VideoPlayer\Scripts\Editor\Subtitles\Ast.cs" />
-    <Compile Include="Assets\DecentM\VideoPlayer\Scripts\Editor\Subtitles\Compiler.cs" />
-    <Compile Include="Assets\DecentM\VideoPlayer\Scripts\Editor\Subtitles\FileFormats\SRT\Lexer.cs" />
-    <Compile Include="Assets\DecentM\VideoPlayer\Scripts\Editor\Subtitles\FileFormats\SRT\Parser.cs" />
-    <Compile Include="Assets\DecentM\VideoPlayer\Scripts\Editor\Subtitles\FileFormats\SRT\Writer.cs" />
-    <Compile Include="Assets\DecentM\VideoPlayer\Scripts\Editor\Subtitles\FileFormats\VSI\Lexer.cs" />
-    <Compile Include="Assets\DecentM\VideoPlayer\Scripts\Editor\Subtitles\FileFormats\VSI\Parser.cs" />
-    <Compile Include="Assets\DecentM\VideoPlayer\Scripts\Editor\Subtitles\FileFormats\VSI\Utils.cs" />
-    <Compile Include="Assets\DecentM\VideoPlayer\Scripts\Editor\Subtitles\FileFormats\VSI\Writer.cs" />
-    <Compile Include="Assets\DecentM\VideoPlayer\Scripts\Editor\Subtitles\FileFormats\VTT\Lexer.cs" />
-    <Compile Include="Assets\DecentM\VideoPlayer\Scripts\Editor\Subtitles\FileFormats\VTT\Parser.cs" />
-    <Compile Include="Assets\DecentM\VideoPlayer\Scripts\Editor\Subtitles\FileFormats\VTT\Writer.cs" />
-    <Compile Include="Assets\DecentM\VideoPlayer\Scripts\Editor\Subtitles\Tests\Misc.cs" />
-    <Compile Include="Assets\DecentM\VideoPlayer\Scripts\Editor\Subtitles\Tests\Srt.cs" />
-    <Compile Include="Assets\DecentM\VideoPlayer\Scripts\Editor\Subtitles\Tests\Vtt.cs" />
-    <Compile Include="Assets\DecentM\VideoPlayer\Scripts\Editor\Subtitles\Transformer.cs" />
-    <Compile Include="Assets\DecentM\VideoPlayer\Scripts\Editor\VideoPlayerAutoFixer.cs" />
+    <Compile Include="Packages\com.decentm.video-player\Scripts\Editor\Importers\SubtitleImporter.cs" />
+    <Compile Include="Packages\com.decentm.video-player\Scripts\Editor\Inspectors\SubtitleImporterInspector.cs" />
+    <Compile Include="Packages\com.decentm.video-player\Scripts\Editor\Inspectors\VideoPlayerUIInspector.cs" />
+    <Compile Include="Packages\com.decentm.video-player\Scripts\Editor\Inspectors\VideoPlaylistInspector.cs" />
+    <Compile Include="Packages\com.decentm.video-player\Scripts\Editor\PluginManager.cs" />
+    <Compile Include="Packages\com.decentm.video-player\Scripts\Editor\Subtitles\Abstracts.cs" />
+    <Compile Include="Packages\com.decentm.video-player\Scripts\Editor\Subtitles\Ast.cs" />
+    <Compile Include="Packages\com.decentm.video-player\Scripts\Editor\Subtitles\Compiler.cs" />
+    <Compile Include="Packages\com.decentm.video-player\Scripts\Editor\Subtitles\FileFormats\SRT\Lexer.cs" />
+    <Compile Include="Packages\com.decentm.video-player\Scripts\Editor\Subtitles\FileFormats\SRT\Parser.cs" />
+    <Compile Include="Packages\com.decentm.video-player\Scripts\Editor\Subtitles\FileFormats\SRT\Writer.cs" />
+    <Compile Include="Packages\com.decentm.video-player\Scripts\Editor\Subtitles\FileFormats\VSI\Lexer.cs" />
+    <Compile Include="Packages\com.decentm.video-player\Scripts\Editor\Subtitles\FileFormats\VSI\Parser.cs" />
+    <Compile Include="Packages\com.decentm.video-player\Scripts\Editor\Subtitles\FileFormats\VSI\Utils.cs" />
+    <Compile Include="Packages\com.decentm.video-player\Scripts\Editor\Subtitles\FileFormats\VSI\Writer.cs" />
+    <Compile Include="Packages\com.decentm.video-player\Scripts\Editor\Subtitles\FileFormats\VTT\Lexer.cs" />
+    <Compile Include="Packages\com.decentm.video-player\Scripts\Editor\Subtitles\FileFormats\VTT\Parser.cs" />
+    <Compile Include="Packages\com.decentm.video-player\Scripts\Editor\Subtitles\FileFormats\VTT\Writer.cs" />
+    <Compile Include="Packages\com.decentm.video-player\Scripts\Editor\Subtitles\Tests\Misc.cs" />
+    <Compile Include="Packages\com.decentm.video-player\Scripts\Editor\Subtitles\Tests\Srt.cs" />
+    <Compile Include="Packages\com.decentm.video-player\Scripts\Editor\Subtitles\Tests\Vtt.cs" />
+    <Compile Include="Packages\com.decentm.video-player\Scripts\Editor\Subtitles\Transformer.cs" />
+    <Compile Include="Packages\com.decentm.video-player\Scripts\Editor\VideoPlayerAutoFixer.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\DecentM\VideoPlayer\Scripts\Editor\DecentM.VideoPlayer.Editor.asmdef" />
+    <None Include="Packages\com.decentm.video-player\Scripts\Editor\DecentM.VideoPlayer.Editor.asmdef" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

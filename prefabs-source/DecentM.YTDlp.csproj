@@ -56,10 +56,10 @@
     <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\DecentM\YTDlp\Runtime\YTdlpCommands.cs" />
+    <Compile Include="Packages\com.decentm.yt-dlp\Runtime\YTdlpCommands.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\DecentM\YTDlp\Runtime\DecentM.YTDlp.asmdef" />
+    <None Include="Packages\com.decentm.yt-dlp\Runtime\DecentM.YTDlp.asmdef" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

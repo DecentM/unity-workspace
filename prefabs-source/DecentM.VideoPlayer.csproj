@@ -56,35 +56,35 @@
     <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\DecentM\VideoPlayer\Runtime\PlayerHandlers\PlayerHandler.cs" />
-    <Compile Include="Assets\DecentM\VideoPlayer\Runtime\PlayerHandlers\UnityVideo.cs" />
-    <Compile Include="Assets\DecentM\VideoPlayer\Runtime\PlayerHandlers\VLCVideo.cs" />
-    <Compile Include="Assets\DecentM\VideoPlayer\Runtime\Plugins\AutoPlayPlugin.cs" />
-    <Compile Include="Assets\DecentM\VideoPlayer\Runtime\Plugins\AutoRetryPlugin.cs" />
-    <Compile Include="Assets\DecentM\VideoPlayer\Runtime\Plugins\DebugPlugin.cs" />
-    <Compile Include="Assets\DecentM\VideoPlayer\Runtime\Plugins\LoadRequestHandlerPlugin.cs" />
-    <Compile Include="Assets\DecentM\VideoPlayer\Runtime\Plugins\Playlist\PlaylistItemRenderer.cs" />
-    <Compile Include="Assets\DecentM\VideoPlayer\Runtime\Plugins\Playlist\PlaylistPlayerPlugin.cs" />
-    <Compile Include="Assets\DecentM\VideoPlayer\Runtime\Plugins\Playlist\VideoPlaylist.cs" />
-    <Compile Include="Assets\DecentM\VideoPlayer\Runtime\Plugins\Playlist\VideoPlaylistUI.cs" />
-    <Compile Include="Assets\DecentM\VideoPlayer\Runtime\Plugins\RenderTextureExportPlugin.cs" />
-    <Compile Include="Assets\DecentM\VideoPlayer\Runtime\Plugins\ResolutionUpdaterPlugin.cs" />
-    <Compile Include="Assets\DecentM\VideoPlayer\Runtime\Plugins\ScreenAnalysisPlugin.cs" />
-    <Compile Include="Assets\DecentM\VideoPlayer\Runtime\Plugins\SkipToTimestampPlugin.cs" />
-    <Compile Include="Assets\DecentM\VideoPlayer\Runtime\Plugins\SoundEffectsPlugin.cs" />
-    <Compile Include="Assets\DecentM\VideoPlayer\Runtime\Plugins\SubtitlesPlugin.cs" />
-    <Compile Include="Assets\DecentM\VideoPlayer\Runtime\Plugins\TextureReferencePlugin.cs" />
-    <Compile Include="Assets\DecentM\VideoPlayer\Runtime\Plugins\TextureUpdaterPlugin.cs" />
-    <Compile Include="Assets\DecentM\VideoPlayer\Runtime\Plugins\UIPlugin.cs" />
-    <Compile Include="Assets\DecentM\VideoPlayer\Runtime\Plugins\URLVerifierPlugin.cs" />
-    <Compile Include="Assets\DecentM\VideoPlayer\Runtime\Plugins\VideoPlayerPlugin.cs" />
-    <Compile Include="Assets\DecentM\VideoPlayer\Runtime\ScreenHandler.cs" />
-    <Compile Include="Assets\DecentM\VideoPlayer\Runtime\VideoPlayerEvents.cs" />
-    <Compile Include="Assets\DecentM\VideoPlayer\Runtime\VideoPlayerSystem.cs" />
-    <Compile Include="Assets\DecentM\VideoPlayer\Runtime\VideoPlayerUI.cs" />
+    <Compile Include="Packages\com.decentm.video-player\Runtime\PlayerHandlers\PlayerHandler.cs" />
+    <Compile Include="Packages\com.decentm.video-player\Runtime\PlayerHandlers\UnityVideo.cs" />
+    <Compile Include="Packages\com.decentm.video-player\Runtime\PlayerHandlers\VLCVideo.cs" />
+    <Compile Include="Packages\com.decentm.video-player\Runtime\Plugins\AutoPlayPlugin.cs" />
+    <Compile Include="Packages\com.decentm.video-player\Runtime\Plugins\AutoRetryPlugin.cs" />
+    <Compile Include="Packages\com.decentm.video-player\Runtime\Plugins\DebugPlugin.cs" />
+    <Compile Include="Packages\com.decentm.video-player\Runtime\Plugins\LoadRequestHandlerPlugin.cs" />
+    <Compile Include="Packages\com.decentm.video-player\Runtime\Plugins\Playlist\PlaylistItemRenderer.cs" />
+    <Compile Include="Packages\com.decentm.video-player\Runtime\Plugins\Playlist\PlaylistPlayerPlugin.cs" />
+    <Compile Include="Packages\com.decentm.video-player\Runtime\Plugins\Playlist\VideoPlaylist.cs" />
+    <Compile Include="Packages\com.decentm.video-player\Runtime\Plugins\Playlist\VideoPlaylistUI.cs" />
+    <Compile Include="Packages\com.decentm.video-player\Runtime\Plugins\RenderTextureExportPlugin.cs" />
+    <Compile Include="Packages\com.decentm.video-player\Runtime\Plugins\ResolutionUpdaterPlugin.cs" />
+    <Compile Include="Packages\com.decentm.video-player\Runtime\Plugins\ScreenAnalysisPlugin.cs" />
+    <Compile Include="Packages\com.decentm.video-player\Runtime\Plugins\SkipToTimestampPlugin.cs" />
+    <Compile Include="Packages\com.decentm.video-player\Runtime\Plugins\SoundEffectsPlugin.cs" />
+    <Compile Include="Packages\com.decentm.video-player\Runtime\Plugins\SubtitlesPlugin.cs" />
+    <Compile Include="Packages\com.decentm.video-player\Runtime\Plugins\TextureReferencePlugin.cs" />
+    <Compile Include="Packages\com.decentm.video-player\Runtime\Plugins\TextureUpdaterPlugin.cs" />
+    <Compile Include="Packages\com.decentm.video-player\Runtime\Plugins\UIPlugin.cs" />
+    <Compile Include="Packages\com.decentm.video-player\Runtime\Plugins\URLVerifierPlugin.cs" />
+    <Compile Include="Packages\com.decentm.video-player\Runtime\Plugins\VideoPlayerPlugin.cs" />
+    <Compile Include="Packages\com.decentm.video-player\Runtime\ScreenHandler.cs" />
+    <Compile Include="Packages\com.decentm.video-player\Runtime\VideoPlayerEvents.cs" />
+    <Compile Include="Packages\com.decentm.video-player\Runtime\VideoPlayerSystem.cs" />
+    <Compile Include="Packages\com.decentm.video-player\Runtime\VideoPlayerUI.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\DecentM\VideoPlayer\Runtime\DecentM.VideoPlayer.asmdef" />
+    <None Include="Packages\com.decentm.video-player\Runtime\DecentM.VideoPlayer.asmdef" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

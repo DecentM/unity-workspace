@@ -56,13 +56,13 @@
     <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\DecentM\Shared\Runtime\DBehaviour.cs" />
-    <Compile Include="Assets\DecentM\Shared\Runtime\DCoroutine.cs" />
-    <Compile Include="Assets\DecentM\Shared\Runtime\Paralellism.cs" />
-    <Compile Include="Assets\DecentM\Shared\Runtime\ProcessManager.cs" />
+    <Compile Include="Packages\com.decentm.shared\Runtime\DBehaviour.cs" />
+    <Compile Include="Packages\com.decentm.shared\Runtime\DCoroutine.cs" />
+    <Compile Include="Packages\com.decentm.shared\Runtime\Paralellism.cs" />
+    <Compile Include="Packages\com.decentm.shared\Runtime\ProcessManager.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\DecentM\Shared\Runtime\DecentM.Shared.asmdef" />
+    <None Include="Packages\com.decentm.shared\Runtime\DecentM.Shared.asmdef" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

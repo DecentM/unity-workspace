@@ -56,10 +56,10 @@
     <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\DecentM\VideoRatelimit\Scripts\Editor\VideoRatelimitAutoFixer.cs" />
+    <Compile Include="Packages\com.decentm.video-ratelimit\Scripts\Editor\VideoRatelimitAutoFixer.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\DecentM\VideoRatelimit\Scripts\Editor\DecentM.VideoRatelimit.Editor.asmdef" />
+    <None Include="Packages\com.decentm.video-ratelimit\Scripts\Editor\DecentM.VideoRatelimit.Editor.asmdef" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

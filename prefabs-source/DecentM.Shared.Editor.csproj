@@ -56,23 +56,23 @@
     <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\DecentM\Shared\Editor\ArabicLigaturesPreprocessor.cs" />
-    <Compile Include="Assets\DecentM\Shared\Editor\AssetPaths.cs" />
-    <Compile Include="Assets\DecentM\Shared\Editor\CombinationsGenerator.cs" />
-    <Compile Include="Assets\DecentM\Shared\Editor\ComponentCollector.cs" />
-    <Compile Include="Assets\DecentM\Shared\Editor\Inspector.cs" />
-    <Compile Include="Assets\DecentM\Shared\Editor\MaterialIcons\Mappings.cs" />
-    <Compile Include="Assets\DecentM\Shared\Editor\MaterialIcons\MaterialIcons.cs" />
-    <Compile Include="Assets\DecentM\Shared\Editor\RandomStringGenerator.cs" />
-    <Compile Include="Assets\DecentM\Shared\Editor\SelfLocatorAsset.cs" />
-    <Compile Include="Assets\DecentM\Shared\Editor\SelfLocatorImporter.cs" />
-    <Compile Include="Assets\DecentM\Shared\Editor\SelfLocatorInspector.cs" />
-    <Compile Include="Assets\DecentM\Shared\Editor\TextProcessing.cs" />
-    <Compile Include="Assets\DecentM\Shared\Editor\Utilities.cs" />
+    <Compile Include="Packages\com.decentm.shared\Editor\ArabicLigaturesPreprocessor.cs" />
+    <Compile Include="Packages\com.decentm.shared\Editor\AssetPaths.cs" />
+    <Compile Include="Packages\com.decentm.shared\Editor\CombinationsGenerator.cs" />
+    <Compile Include="Packages\com.decentm.shared\Editor\ComponentCollector.cs" />
+    <Compile Include="Packages\com.decentm.shared\Editor\Inspector.cs" />
+    <Compile Include="Packages\com.decentm.shared\Editor\MaterialIcons\Mappings.cs" />
+    <Compile Include="Packages\com.decentm.shared\Editor\MaterialIcons\MaterialIcons.cs" />
+    <Compile Include="Packages\com.decentm.shared\Editor\RandomStringGenerator.cs" />
+    <Compile Include="Packages\com.decentm.shared\Editor\SelfLocatorAsset.cs" />
+    <Compile Include="Packages\com.decentm.shared\Editor\SelfLocatorImporter.cs" />
+    <Compile Include="Packages\com.decentm.shared\Editor\SelfLocatorInspector.cs" />
+    <Compile Include="Packages\com.decentm.shared\Editor\TextProcessing.cs" />
+    <Compile Include="Packages\com.decentm.shared\Editor\Utilities.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\DecentM\Shared\Editor\DecentM.Shared.Editor.asmdef" />
-    <None Include="Assets\DecentM\Shared\Editor\MaterialIcons\LICENSE.txt" />
+    <None Include="Packages\com.decentm.shared\Editor\DecentM.Shared.Editor.asmdef" />
+    <None Include="Packages\com.decentm.shared\Editor\MaterialIcons\LICENSE.txt" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

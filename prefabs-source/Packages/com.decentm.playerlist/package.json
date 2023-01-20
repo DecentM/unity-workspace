@@ -1,0 +1,18 @@
+{
+    "name": "com.decentm.playerlist",
+    "version": "1.0.0",
+    "displayName": "DecentM.PlayerList",
+    "description": "A list container that enables easy whitelisting or blacklisting of certain players by a string ID",
+    "unity": "2019.4",
+    "unityRelease": "31f1",
+    "documentationUrl": "https://decentm.github.io/",
+    "changelogUrl": "https://github.com/DecentM/mods-workspace/tree/master/prefabs-source/CHANGELOG.md",
+    "licensesUrl": "https://github.com/DecentM/mods-workspace/tree/master/LICENSE",
+    "dependencies": {
+        "com.decentm.shared": "1.0.0",
+        "com.decentm.collections": "1.0.0"
+    },
+    "author": {
+        "name": "DecentM"
+    }
+}

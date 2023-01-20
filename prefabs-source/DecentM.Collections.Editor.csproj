@@ -56,15 +56,15 @@
     <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\DecentM\Collections\Editor\CollectionInspector.cs" />
-    <Compile Include="Assets\DecentM\Collections\Editor\DoubleLinkedListInspector.cs" />
-    <Compile Include="Assets\DecentM\Collections\Editor\ListInspector.cs" />
-    <Compile Include="Assets\DecentM\Collections\Editor\MapInspector.cs" />
-    <Compile Include="Assets\DecentM\Collections\Editor\QueueInspector.cs" />
-    <Compile Include="Assets\DecentM\Collections\Editor\StackInspector.cs" />
+    <Compile Include="Packages\com.decentm.collections\Editor\CollectionInspector.cs" />
+    <Compile Include="Packages\com.decentm.collections\Editor\DoubleLinkedListInspector.cs" />
+    <Compile Include="Packages\com.decentm.collections\Editor\ListInspector.cs" />
+    <Compile Include="Packages\com.decentm.collections\Editor\MapInspector.cs" />
+    <Compile Include="Packages\com.decentm.collections\Editor\QueueInspector.cs" />
+    <Compile Include="Packages\com.decentm.collections\Editor\StackInspector.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\DecentM\Collections\Editor\DecentM.Collections.Editor.asmdef" />
+    <None Include="Packages\com.decentm.collections\Editor\DecentM.Collections.Editor.asmdef" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

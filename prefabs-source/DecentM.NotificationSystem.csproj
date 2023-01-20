@@ -56,11 +56,11 @@
     <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\DecentM\NotificationSystem\Runtime\NotificationSystem.cs" />
-    <Compile Include="Assets\DecentM\NotificationSystem\Runtime\PerformanceLevelChangeProvider.cs" />
+    <Compile Include="Packages\com.decentm.notification-system\Runtime\NotificationSystem.cs" />
+    <Compile Include="Packages\com.decentm.notification-system\Runtime\PerformanceLevelChangeProvider.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\DecentM\NotificationSystem\Runtime\DecentM.NotificationSystem.asmdef" />
+    <None Include="Packages\com.decentm.notification-system\Runtime\DecentM.NotificationSystem.asmdef" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

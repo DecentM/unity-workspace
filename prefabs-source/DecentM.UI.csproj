@@ -56,14 +56,14 @@
     <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\DecentM\UI\Dropdown\Runtime\Dropdown.cs" />
-    <Compile Include="Assets\DecentM\UI\Dropdown\Runtime\DropdownOption.cs" />
-    <Compile Include="Assets\DecentM\UI\VirtualScroll\PlainTextVirtualScrollItem.cs" />
-    <Compile Include="Assets\DecentM\UI\VirtualScroll\VirtualScroll.cs" />
-    <Compile Include="Assets\DecentM\UI\VirtualScroll\VirtualScrollItem.cs" />
+    <Compile Include="Packages\com.decentm.ui\Dropdown\Runtime\Dropdown.cs" />
+    <Compile Include="Packages\com.decentm.ui\Dropdown\Runtime\DropdownOption.cs" />
+    <Compile Include="Packages\com.decentm.ui\VirtualScroll\PlainTextVirtualScrollItem.cs" />
+    <Compile Include="Packages\com.decentm.ui\VirtualScroll\VirtualScroll.cs" />
+    <Compile Include="Packages\com.decentm.ui\VirtualScroll\VirtualScrollItem.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\DecentM\UI\DecentM.UI.asmdef" />
+    <None Include="Packages\com.decentm.ui\DecentM.UI.asmdef" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

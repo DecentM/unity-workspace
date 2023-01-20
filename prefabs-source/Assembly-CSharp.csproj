@@ -56,8 +56,6 @@
     <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\DecentM\CustomComponents\StatsD\Demo\DemoStatsDSender.cs" />
-    <Compile Include="Assets\DecentM\CustomComponents\StatsD\StatsDClient.cs" />
     <Compile Include="Assets\VLCUnity\Demos\Scripts\VLCMinimalPlayback.cs" />
     <Compile Include="Assets\VLCUnity\Demos\Scripts\VLCPlayerExample.cs" />
     <Compile Include="Assets\VLCUnity\Demos\Scripts\VLCPlayerExampleCamera.cs" />

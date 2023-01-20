@@ -56,12 +56,12 @@
     <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\DecentM\CustomComponents\VLCPlayer\Scripts\Demo\VLCPlayerDemo.cs" />
-    <Compile Include="Assets\DecentM\CustomComponents\VLCPlayer\Scripts\LibVLCInstance.cs" />
-    <Compile Include="Assets\DecentM\CustomComponents\VLCPlayer\Scripts\VLCPlayer.cs" />
+    <Compile Include="Packages\com.decentm.custom-components\VLCPlayer\Scripts\Demo\VLCPlayerDemo.cs" />
+    <Compile Include="Packages\com.decentm.custom-components\VLCPlayer\Scripts\LibVLCInstance.cs" />
+    <Compile Include="Packages\com.decentm.custom-components\VLCPlayer\Scripts\VLCPlayer.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\DecentM\CustomComponents\VLCPlayer\Scripts\DecentM.CustomComponents.VLCPlayer.asmdef" />
+    <None Include="Packages\com.decentm.custom-components\VLCPlayer\Scripts\DecentM.CustomComponents.VLCPlayer.asmdef" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

@@ -56,11 +56,11 @@
     <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\DecentM\PubSub\Runtime\Pubsub.cs" />
-    <Compile Include="Assets\DecentM\PubSub\Runtime\PubsubSubscriber.cs" />
+    <Compile Include="Packages\com.decentm.pubsub\Runtime\Pubsub.cs" />
+    <Compile Include="Packages\com.decentm.pubsub\Runtime\PubsubSubscriber.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\DecentM\PubSub\Runtime\DecentM.Pubsub.asmdef" />
+    <None Include="Packages\com.decentm.pubsub\Runtime\DecentM.Pubsub.asmdef" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

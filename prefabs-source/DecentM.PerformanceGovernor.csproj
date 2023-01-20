@@ -56,11 +56,11 @@
     <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\DecentM\PerformanceGovernor\Runtime\PerformanceGovernor.cs" />
-    <Compile Include="Assets\DecentM\PerformanceGovernor\Runtime\PerformanceGovernorPlugin.cs" />
+    <Compile Include="Packages\com.decentm.performance-governor\Runtime\PerformanceGovernor.cs" />
+    <Compile Include="Packages\com.decentm.performance-governor\Runtime\PerformanceGovernorPlugin.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\DecentM\PerformanceGovernor\Runtime\DecentM.PerformanceGovernor.asmdef" />
+    <None Include="Packages\com.decentm.performance-governor\Runtime\DecentM.PerformanceGovernor.asmdef" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

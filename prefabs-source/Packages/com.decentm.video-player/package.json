@@ -1,0 +1,18 @@
+{
+    "name": "com.decentm.video-player",
+    "version": "1.0.0",
+    "displayName": "DecentM.VideoPlayer",
+    "description": "An event driven video player, compatible with my VLCVideo component, AVPro, and the builtin Unity video player",
+    "unity": "2019.4",
+    "unityRelease": "31f1",
+    "documentationUrl": "https://decentm.github.io/",
+    "changelogUrl": "https://github.com/DecentM/mods-workspace/tree/master/prefabs-source/CHANGELOG.md",
+    "licensesUrl": "https://github.com/DecentM/mods-workspace/tree/master/LICENSE",
+    "dependencies": {
+        "com.decentm.shared": "1.0.0",
+        "com.decentm.pubsub": "1.0.0"
+    },
+    "author": {
+        "name": "DecentM"
+    }
+}
