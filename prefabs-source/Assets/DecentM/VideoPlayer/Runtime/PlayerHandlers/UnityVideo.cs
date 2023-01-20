@@ -9,7 +9,7 @@ namespace DecentM.VideoPlayer.Handlers
         public UnityEngine.Video.VideoPlayer player;
         public AudioSource audioSource;
         public MeshRenderer screen;
-        public VideoPlayerEvents events;
+        public new VideoPlayerEvents events;
 
         private MaterialPropertyBlock _fetchBlock;
 

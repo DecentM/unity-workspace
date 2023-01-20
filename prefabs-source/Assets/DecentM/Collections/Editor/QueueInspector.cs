@@ -1,8 +1,7 @@
 ﻿using UnityEditor;
 using UnityEngine;
-using DecentM.Collections;
 
-namespace DecentM.Shared.Editor
+namespace DecentM.Collections.Editor
 {
     [CustomEditor(typeof(Queue))]
     public class QueueInspector : CollectionInspector

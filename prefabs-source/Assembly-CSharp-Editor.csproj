@@ -60,8 +60,6 @@
      <Compile Include="Assets\DecentM\Collections\Tests\Editor\MapTests.cs" />
      <Compile Include="Assets\DecentM\Collections\Tests\Editor\QueueTests.cs" />
      <Compile Include="Assets\DecentM\Collections\Tests\Editor\StackTests.cs" />
-     <Compile Include="Assets\Editor\AnimationRefactor.cs" />
-     <Compile Include="Assets\Editor\ReplaceWithPrefab.cs" />
      <Compile Include="Assets\VLCUnity\Editor\Build.cs" />
  <Reference Include="UnityEngine">
  <HintPath>D:/UnityEditors/2019.4.31f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
@@ -257,9 +255,6 @@
  </Reference>
  <Reference Include="UnityEditor.Android.Extensions">
  <HintPath>D:/UnityEditors/2019.4.31f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll</HintPath>
- </Reference>
- <Reference Include="NugetForUnity">
- <HintPath>D:/UnityProjects/ChilloutVR/workspace/prefabs-source/Assets/NuGet/Editor/NugetForUnity.dll</HintPath>
  </Reference>
  <Reference Include="LibVLCSharp">
  <HintPath>D:/UnityProjects/ChilloutVR/workspace/prefabs-source/Assets/VLCUnity/Plugins/Android/armeabi-v7a/LibVLCSharp.dll</HintPath>

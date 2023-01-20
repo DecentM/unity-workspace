@@ -20,7 +20,7 @@ namespace DecentM.VideoPlayer.Plugins
         private float elapsed = 0;
         private float fps = 0;
 
-        private Camera camera;
+        private new Camera camera;
 
         protected override void _Start()
         {

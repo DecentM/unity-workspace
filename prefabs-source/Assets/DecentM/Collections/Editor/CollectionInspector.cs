@@ -1,8 +1,8 @@
 ﻿using UnityEditor;
 using UnityEngine;
-using DecentM.Collections;
+using DecentM.Shared.Editor;
 
-namespace DecentM.Shared.Editor
+namespace DecentM.Collections.Editor
 {
     public abstract class CollectionInspector : Inspector
     {

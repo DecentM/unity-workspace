@@ -257,9 +257,6 @@
  <Reference Include="UnityEditor.Android.Extensions">
  <HintPath>D:/UnityEditors/2019.4.31f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll</HintPath>
  </Reference>
- <Reference Include="NugetForUnity">
- <HintPath>D:/UnityProjects/ChilloutVR/workspace/prefabs-source/Assets/NuGet/Editor/NugetForUnity.dll</HintPath>
- </Reference>
  <Reference Include="LibVLCSharp">
  <HintPath>D:/UnityProjects/ChilloutVR/workspace/prefabs-source/Assets/VLCUnity/Plugins/Android/armeabi-v7a/LibVLCSharp.dll</HintPath>
  </Reference>
