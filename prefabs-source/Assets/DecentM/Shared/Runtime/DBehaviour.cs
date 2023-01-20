@@ -6,11 +6,13 @@ using UdonSharp;
 
 namespace DecentM.Shared
 {
-    public class DBehaviour :
+    public class DBehaviour
 #if COMPILER_UDONSHARP
-        UdonSharpBehaviour
+        : UdonSharpBehaviour
+#elif TESTS_RUNNING
+        // Defined from cli, means we can test pure classes without MonoBehaviour
 #else
-        MonoBehaviour
+        : MonoBehaviour
 #endif
     {
         public void Invoke(string methodName, int delaySeconds)
