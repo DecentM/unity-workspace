@@ -1,6 +1,6 @@
 ﻿using UnityEditor;
 
-using DecentM.EditorTools;
+using DecentM.Shared.Editor;
 using DecentM.VideoPlayer.Plugins;
 using DecentM.Shared;
 

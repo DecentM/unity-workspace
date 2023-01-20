@@ -6,7 +6,7 @@ using UnityEditor;
 using UnityEngine;
 
 using DecentM.YTdlp;
-using DecentM.EditorTools;
+using DecentM.Shared.Editor;
 using DecentM.Shared.Icons;
 using DecentM.VideoPlayer.Plugins;
 

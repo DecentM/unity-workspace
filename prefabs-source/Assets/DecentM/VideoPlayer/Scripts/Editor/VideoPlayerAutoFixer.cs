@@ -3,11 +3,11 @@
 using UnityEngine;
 using UnityEditor;
 
-using DecentM.EditorTools;
+using DecentM.Shared.Editor;
 using DecentM.VideoPlayer.Plugins;
 using DecentM.VideoRatelimit;
 
-namespace DecentM.VideoPlayer.EditorTools
+namespace DecentM.VideoPlayer.Editor
 {
     public static class VideoPlayerAutoFixer
     {

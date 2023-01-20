@@ -1,7 +1,8 @@
 ﻿using System.Collections.Generic;
 using UnityEditor;
 
-using DecentM.EditorTools;
+using DecentM.Shared.Editor;
+using UnityEngine.Video;
 
 namespace DecentM.VideoRatelimit.Editor
 {
@@ -27,10 +28,10 @@ namespace DecentM.VideoRatelimit.Editor
 
             #region Auto-attach to video players
 
-            List<PlayerHandler> players =
-                ComponentCollector<PlayerHandler>.CollectFromActiveScene();
+            List<VideoPlayer> players =
+                ComponentCollector<VideoPlayer>.CollectFromActiveScene();
 
-            foreach (PlayerHandler player in players)
+            foreach (VideoPlayer player in players)
             {
                 PlayerLoadMonitoring existing = player.gameObject.GetComponent<PlayerLoadMonitoring>();
 

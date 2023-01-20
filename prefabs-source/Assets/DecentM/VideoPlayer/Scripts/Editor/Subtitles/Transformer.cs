@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-using DecentM.EditorTools;
+using DecentM.Shared.Editor;
 
 namespace DecentM.Subtitles.Editor
 {

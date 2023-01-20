@@ -18,12 +18,13 @@ namespace DecentM.Shared.Icons
             int index = (int)icon;
 
             if (cache.ContainsKey(index) && cache.TryGetValue(index, out Texture2D cachedResult))
-            {
                 return cachedResult;
-            }
 
-            string path = $"{SelfLocatorAsset.LocateSelf()}/Shared/MaterialIcons/spritesheet.png";
+            string path = $"{SelfLocatorAsset.LocateSelf()}/Shared/Editor/MaterialIcons/spritesheet.png";
             Texture2D sheet = AssetDatabase.LoadAssetAtPath<Texture2D>(path);
+
+            if (sheet == null)
+                return new Texture2D(IconSize, IconSize);
 
             int iconX = index % (sheet.width / IconSize);
             int iconY = Mathf.FloorToInt(index * IconSize / sheet.height);

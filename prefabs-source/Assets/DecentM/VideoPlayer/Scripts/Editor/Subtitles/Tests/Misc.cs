@@ -6,7 +6,7 @@ using UnityEngine.TestTools;
 using System.IO;
 using System.Linq;
 
-using DecentM.EditorTools;
+using DecentM.Shared.Editor;
 
 namespace DecentM.Subtitles.Editor.Tests
 {

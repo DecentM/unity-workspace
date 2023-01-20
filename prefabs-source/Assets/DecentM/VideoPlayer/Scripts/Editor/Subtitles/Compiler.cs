@@ -2,7 +2,7 @@
 using System.Linq;
 using System.Collections.Generic;
 
-using DecentM.Subtitles.Editor;
+using DecentM.Shared.Editor;
 
 namespace DecentM.Subtitles.Editor
 {
