@@ -57,16 +57,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Packages\com.decentm.shared\Editor\ArabicLigaturesPreprocessor.cs" />
-    <Compile Include="Packages\com.decentm.shared\Editor\AssetPaths.cs" />
     <Compile Include="Packages\com.decentm.shared\Editor\CombinationsGenerator.cs" />
     <Compile Include="Packages\com.decentm.shared\Editor\ComponentCollector.cs" />
     <Compile Include="Packages\com.decentm.shared\Editor\Inspector.cs" />
     <Compile Include="Packages\com.decentm.shared\Editor\MaterialIcons\Mappings.cs" />
     <Compile Include="Packages\com.decentm.shared\Editor\MaterialIcons\MaterialIcons.cs" />
     <Compile Include="Packages\com.decentm.shared\Editor\RandomStringGenerator.cs" />
-    <Compile Include="Packages\com.decentm.shared\Editor\SelfLocatorAsset.cs" />
-    <Compile Include="Packages\com.decentm.shared\Editor\SelfLocatorImporter.cs" />
-    <Compile Include="Packages\com.decentm.shared\Editor\SelfLocatorInspector.cs" />
     <Compile Include="Packages\com.decentm.shared\Editor\TextProcessing.cs" />
     <Compile Include="Packages\com.decentm.shared\Editor\Utilities.cs" />
   </ItemGroup>

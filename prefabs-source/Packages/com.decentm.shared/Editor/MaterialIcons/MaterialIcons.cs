@@ -3,8 +3,6 @@
 using UnityEngine;
 using UnityEditor;
 
-using DecentM.Shared.Editor.SelfLocator;
-
 namespace DecentM.Shared.Icons
 {
     public static class MaterialIcons
@@ -20,7 +18,7 @@ namespace DecentM.Shared.Icons
             if (cache.ContainsKey(index) && cache.TryGetValue(index, out Texture2D cachedResult))
                 return cachedResult;
 
-            string path = $"{SelfLocatorAsset.LocateSelf()}/Shared/Editor/MaterialIcons/spritesheet.png";
+            string path = $"Packages/com.decentm.shared/Editor/MaterialIcons/spritesheet.png";
             Texture2D sheet = AssetDatabase.LoadAssetAtPath<Texture2D>(path);
 
             if (sheet == null)

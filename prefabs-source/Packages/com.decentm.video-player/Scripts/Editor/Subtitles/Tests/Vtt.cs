@@ -14,11 +14,11 @@ namespace DecentM.Subtitles.Editor.Tests
     public class Vtt
     {
         private static string NormalFile = File.ReadAllText(
-            $"{AssetPaths.SelfLocation}/Prefabs/VideoPlayer/Scripts/Editor/Tests/Fixtures/normal.vtt"
+            $"Packages/com.decentm.video-player/Scripts/Editor/Tests/Fixtures/normal.vtt"
         );
 
         private static string AcidFile = File.ReadAllText(
-            $"{AssetPaths.SelfLocation}/Prefabs/VideoPlayer/Scripts/Editor/Tests/Fixtures/acidtest.vtt"
+            $"Packages/com.decentm.video-player/Scripts/Editor/Tests/Fixtures/acidtest.vtt"
         );
 
         [Test]

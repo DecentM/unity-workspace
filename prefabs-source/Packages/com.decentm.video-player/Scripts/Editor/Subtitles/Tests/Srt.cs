@@ -10,7 +10,7 @@ namespace DecentM.Subtitles.Editor.Tests
     public class Srt
     {
         private static string NormalFile = File.ReadAllText(
-            $"{AssetPaths.SelfLocation}/Prefabs/VideoPlayer/Scripts/Editor/Tests/Fixtures/normal.srt"
+            $"Packages/com.decentm.video-player/Scripts/Editor/Tests/Fixtures/normal.srt"
         );
 
         [Test]

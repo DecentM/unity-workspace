@@ -249,7 +249,7 @@ namespace DecentM.VideoPlayer.Editor
                 }
                 else
                 {
-                    this.DrawImage(AssetPaths.FallbackVideoThumbnail, thumbnailRectInner);
+                    this.DrawImage(new Texture2D(192, 108), thumbnailRectInner);
                 }
 
                 Rect textRectOuter = this.GetRectInside(
@@ -535,9 +535,11 @@ namespace DecentM.VideoPlayer.Editor
 
         private object[] CreateNewItem()
         {
+            Texture2D texture = new Texture2D(192, 108);
+
             return this.CreateNewItem(
                 "",
-                AssetPaths.FallbackVideoThumbnail,
+                Sprite.Create(texture, new Rect(0.0f, 0.0f, texture.width, texture.height), new Vector2(0.5f, 0.5f), 100.0f),
                 "",
                 "",
                 "",
@@ -553,9 +555,11 @@ namespace DecentM.VideoPlayer.Editor
 
         private object[] CreateNewItem(string url)
         {
+            Texture2D texture = new Texture2D(192, 108);
+
             return this.CreateNewItem(
                 url,
-                AssetPaths.FallbackVideoThumbnail,
+                Sprite.Create(texture, new Rect(0.0f, 0.0f, texture.width, texture.height), new Vector2(0.5f, 0.5f), 100.0f),
                 "",
                 "",
                 "",
