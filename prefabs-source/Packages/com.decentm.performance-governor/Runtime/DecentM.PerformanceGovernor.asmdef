@@ -1,8 +1,8 @@
 {
     "name": "DecentM.PerformanceGovernor",
     "references": [
-        "GUID:a85d1822798dd5748abc65cd720f5b56",
-        "GUID:80d8201452ffbb54b90d7d0b6735aba0"
+        "DecentM.Shared",
+        "DecentM.Pubsub"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

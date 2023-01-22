@@ -1,7 +1,7 @@
 {
     "name": "DecentM.Pubsub",
     "references": [
-        "GUID:a85d1822798dd5748abc65cd720f5b56"
+        "DecentM.Shared"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

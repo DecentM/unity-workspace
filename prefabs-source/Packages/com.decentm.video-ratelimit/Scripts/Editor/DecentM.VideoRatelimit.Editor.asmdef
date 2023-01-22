@@ -1,9 +1,9 @@
 {
     "name": "DecentM.VideoRatelimit.Editor",
     "references": [
-        "GUID:22291c8b6b3497a46b4a31a80494e68d",
-        "GUID:e231e6cf10d5f9a46a7f7d7642b5818a",
-        "GUID:a85d1822798dd5748abc65cd720f5b56"
+        "DecentM.Shared.Editor",
+        "DecentM.VideoRatelimit",
+        "DecentM.Shared"
     ],
     "includePlatforms": [
         "Editor"

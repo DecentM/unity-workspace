@@ -1,10 +1,10 @@
 {
     "name": "DecentM.PerformanceGovernor.Editor",
     "references": [
-        "GUID:a85d1822798dd5748abc65cd720f5b56",
-        "GUID:22291c8b6b3497a46b4a31a80494e68d",
-        "GUID:7d94a2773a4a96e48905105d70d589de",
-        "GUID:80d8201452ffbb54b90d7d0b6735aba0"
+        "DecentM.Shared",
+        "DecentM.Shared.Editor",
+        "DecentM.PerformanceGovernor",
+        "DecentM.Pubsub"
     ],
     "includePlatforms": [
         "Editor"
