@@ -5,7 +5,7 @@
       "depth": 0,
       "source": "embedded",
       "dependencies": {
-        "com.decentm.shared": "1.0.0"
+        "com.decentm.shared": "0.0.1"
       }
     },
     "com.decentm.custom-components": {
@@ -13,8 +13,8 @@
       "depth": 0,
       "source": "embedded",
       "dependencies": {
-        "com.decentm.shared": "1.0.0",
-        "com.decentm.pubsub": "1.0.0"
+        "com.decentm.shared": "0.0.1",
+        "com.decentm.pubsub": "0.0.1"
       }
     },
     "com.decentm.menual-camera": {
@@ -22,7 +22,7 @@
       "depth": 0,
       "source": "embedded",
       "dependencies": {
-        "com.decentm.shared": "1.0.0"
+        "com.decentm.shared": "0.0.1"
       }
     },
     "com.decentm.notification-system": {
@@ -30,7 +30,7 @@
       "depth": 0,
       "source": "embedded",
       "dependencies": {
-        "com.decentm.shared": "1.0.0"
+        "com.decentm.shared": "0.0.1"
       }
     },
     "com.decentm.performance-governor": {
@@ -38,7 +38,7 @@
       "depth": 0,
       "source": "embedded",
       "dependencies": {
-        "com.decentm.shared": "1.0.0"
+        "com.decentm.shared": "0.0.1"
       }
     },
     "com.decentm.playerlist": {
@@ -46,8 +46,8 @@
       "depth": 0,
       "source": "embedded",
       "dependencies": {
-        "com.decentm.shared": "1.0.0",
-        "com.decentm.collections": "1.0.0"
+        "com.decentm.shared": "0.0.1",
+        "com.decentm.collections": "0.0.1"
       }
     },
     "com.decentm.pubsub": {
@@ -55,8 +55,8 @@
       "depth": 0,
       "source": "embedded",
       "dependencies": {
-        "com.decentm.shared": "1.0.0",
-        "com.decentm.collections": "1.0.0"
+        "com.decentm.shared": "0.0.1",
+        "com.decentm.collections": "0.0.1"
       }
     },
     "com.decentm.shared": {
@@ -70,7 +70,7 @@
       "depth": 0,
       "source": "embedded",
       "dependencies": {
-        "com.decentm.shared": "1.0.0"
+        "com.decentm.shared": "0.0.1"
       }
     },
     "com.decentm.video-player": {
@@ -78,12 +78,12 @@
       "depth": 0,
       "source": "embedded",
       "dependencies": {
-        "com.decentm.shared": "1.0.0",
-        "com.decentm.pubsub": "1.0.0",
-        "com.decentm.yt-dlp": "1.0.0",
-        "com.decentm.video-ratelimit": "1.0.0",
-        "com.decentm.ui": "1.0.0",
-        "com.decentm.custom-components": "1.0.0"
+        "com.decentm.shared": "0.0.1",
+        "com.decentm.pubsub": "0.0.1",
+        "com.decentm.yt-dlp": "0.0.1",
+        "com.decentm.video-ratelimit": "0.0.1",
+        "com.decentm.ui": "0.0.1",
+        "com.decentm.custom-components": "0.0.1"
       }
     },
     "com.decentm.video-ratelimit": {
@@ -91,8 +91,8 @@
       "depth": 0,
       "source": "embedded",
       "dependencies": {
-        "com.decentm.shared": "1.0.0",
-        "com.decentm.pubsub": "1.0.0"
+        "com.decentm.shared": "0.0.1",
+        "com.decentm.pubsub": "0.0.1"
       }
     },
     "com.decentm.yt-dlp": {
@@ -100,8 +100,8 @@
       "depth": 0,
       "source": "embedded",
       "dependencies": {
-        "com.decentm.shared": "1.0.0",
-        "com.decentm.pubsub": "1.0.0"
+        "com.decentm.shared": "0.0.1",
+        "com.decentm.pubsub": "0.0.1"
       }
     },
     "com.unity.collab-proxy": {
