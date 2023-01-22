@@ -47,7 +47,7 @@ namespace DecentM.Mods.DecryptBundles.Patches
             fileName += $"_{objectId}";
 
             path = $"{Application.dataPath}/Decrypted/{fileName}";
-            
+
             if (b == null)
                 data = new byte[0];
             else
