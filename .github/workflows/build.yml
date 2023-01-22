@@ -10,11 +10,7 @@ on:
     branches: [ "master" ]
 
 jobs:
-
-########################
-#       Prefabs        #
-########################
-  build-prefabs-source:
+  build-dlls:
     runs-on: ubuntu-latest
 
     defaults:
@@ -25,19 +21,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-
-      - name: Get yt-dlp
-        env:
-          YT_DLP_VERSION: "2023.01.06"
-          YT_DLP_FILE: "yt-dlp.exe"
-        run: |
-          set -e
-          set -x
-
-          mkdir -p ./dll-build/UserLibs
-
-          YT_DLP_URL=https://github.com/yt-dlp/yt-dlp/releases/download/$YT_DLP_VERSION/$YT_DLP_FILE
-          wget $YT_DLP_URL -O ./dll-build/UserLibs/$YT_DLP_FILE
 
       - name: Cache
         uses: actions/cache@v3
@@ -58,28 +41,76 @@ jobs:
           UNITY_EMAIL: ${{ secrets.UNITY_EMAIL }}
           UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
 
+  determine-matrix:
+    runs-on: ubuntu-latest
+
+    defaults:
+      run:
+        shell: bash
+        working-directory: prefabs-source
+
+    outputs:
+      folders: ${{ steps.jobs.outputs.folders }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Create package list
+        id: jobs
+        run: |
+          set -exu
+
+          cd Packages
+          echo folders=$(tree -J -d -L 1 | jq -c '.[0].contents | map(.name)') >> $GITHUB_OUTPUT
+
+########################
+#       Prefabs        #
+########################
+  build-prefabs-source:
+    runs-on: ubuntu-latest
+
+    needs:
+      - determine-matrix
+      - build-dlls
+
+    strategy:
+      matrix:
+        folder: ${{ fromJson(needs.determine-matrix.outputs.folders) }}
+
+    defaults:
+      run:
+        shell: bash
+        working-directory: prefabs-source
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
       - name: Setup Node
         uses: actions/setup-node@v3
         with:
           node-version: '16.x'
           registry-url: 'https://npm.pkg.github.com/@decentm'
 
-      - name: Publish packages
+      - name: Check if version has been updated
+        id: check
+        uses: EndBug/version-check@v2
+        with:
+          diff-search: true
+          file-name: prefabs-source/Packages/${{ matrix.folder }}/package.json
+
+      - name: Publish if changed
+        if: steps.check.outputs.changed == 'true'
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           set -exu
 
-          for f in Packages/*; do
-              if [ -d "$f" ]; then
-                  cd "$f"
-
-                  cp $NPM_CONFIG_USERCONFIG .
-                  yarn publish --access=public
-
-                  cd -
-              fi
-          done
+          cd ${{ matrix.folder }}
+          cp $NPM_CONFIG_USERCONFIG .
+          yarn publish --access=public
+          cd -
 
 ########################
 #         Mods         #
@@ -88,7 +119,7 @@ jobs:
     runs-on: windows-latest
 
     needs:
-      - build-prefabs-source
+      - build-dlls
 
     defaults:
       run:
@@ -123,11 +154,6 @@ jobs:
         gameid: 661130
         folder: mods/chilloutvr
 
-    - uses: actions/download-artifact@v2
-      with:
-        name: DecentM.UserLibs
-        path: mods/prefabs
-
     - name: Bootstrap CI
       run: tools/bootstrap_ci.ps1
       env:
@@ -135,9 +161,3 @@ jobs:
 
     - name: Build
       run: dotnet build --no-restore -c Release
-
-    - name: Upload outputs
-      uses: actions/upload-artifact@v2
-      with:
-        name: DecentM.Mods
-        path: .\mods\chilloutvr\Mods\*.dll
