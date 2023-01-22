@@ -66,7 +66,7 @@ namespace DecentM.YTdlp
     {
         #region Utilities
 
-        private static string GetArguments(string arguments)
+        private static string GetArguments(params string[] arguments)
         {
             return string.Join(
                 " ",
@@ -80,8 +80,8 @@ namespace DecentM.YTdlp
                     $"--geo-bypass",
                     $"--ignore-config",
                     $"--ignore-errors",
-                    $"{arguments}"
-                }
+                },
+                arguments
             );
         }
 
@@ -95,7 +95,7 @@ namespace DecentM.YTdlp
                 return false;
 
             Debug.LogWarning(result.stderr);
-            Debug.LogWarning($"yt-dlp has outputted an error, results may be incomplete.");
+            Debug.LogWarning($"yt-dlp output an error, results may be incomplete.");
 
             return true;
         }
@@ -108,19 +108,21 @@ namespace DecentM.YTdlp
 
         private static void YTdlp(
             string arguments,
-            Action<string> callback
+            Action<string> callback,
+            string path = "."
         )
         {
             ProcessManager.RunProcess(
                 YtDlpPath,
                 GetArguments(arguments),
-                ".",
+                path,
                 (ProcessResult result) => {
                     // TODO: Maybe not discard errors, but tell the user about them
                     if (IsError(result))
                         return;
 
-                    callback(result.stdout);
+                    if (callback != null)
+                        callback(result.stdout);
                 }
             );
         }
@@ -153,7 +155,7 @@ namespace DecentM.YTdlp
                 ? $"--write-subs --write-auto-subs --sub-format srt/vtt --sub-langs all {url}"
                 : $"--write-subs --no-write-auto-subs --sub-format srt/vtt --sub-langs all {url}";
 
-            YTdlp(arguments, OnFinish);
+            YTdlp(arguments, OnFinish, path);
         }
 
         public static void GetMetadataWithComments(
@@ -166,12 +168,12 @@ namespace DecentM.YTdlp
 
         public static void DownloadMetadataWithComments(string url, string path, Action<string> OnFinish)
         {
-            YTdlp($"--write-comments -J {url}", OnFinish);
+            YTdlp($"--write-comments -J {url}", OnFinish, path);
         }
 
         public static void DownloadThumbnail(string url, string path, Action<string> OnFinish)
         {
-            YTdlp($"--convert-thumbnails jpg --write-thumbnail {url}", OnFinish);
+            YTdlp($"--convert-thumbnails jpg --write-thumbnail {url}", OnFinish, path);
         }
 
 #endregion

@@ -79,7 +79,11 @@
       "source": "embedded",
       "dependencies": {
         "com.decentm.shared": "1.0.0",
-        "com.decentm.pubsub": "1.0.0"
+        "com.decentm.pubsub": "1.0.0",
+        "com.decentm.yt-dlp": "1.0.0",
+        "com.decentm.video-ratelimit": "1.0.0",
+        "com.decentm.ui": "1.0.0",
+        "com.decentm.custom-components": "1.0.0"
       }
     },
     "com.decentm.video-ratelimit": {
