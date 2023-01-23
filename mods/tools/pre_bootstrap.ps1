@@ -9,3 +9,8 @@ if (!(Get-Command "git.exe" -errorAction SilentlyContinue)) {
     Write-Error "git.exe not found in path. Install Git from git-scm.com, reboot, then try again."
     exit 1002;
 }
+
+if (!(Get-Command "gh.exe" -errorAction SilentlyContinue)) {
+    Write-Error "gh.exe not found in path. Install the GitHub CLI from cli.github.com, reboot, then try again."
+    exit 1002;
+}
