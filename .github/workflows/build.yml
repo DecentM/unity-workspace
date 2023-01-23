@@ -22,16 +22,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
-      - name: Cache
-        uses: actions/cache@v3
-        with:
-          path: prefabs-source/Library
-          key: prefabs-source-Library-${{ hashFiles('prefabs-source/Assets/**/*', 'prefabs-source/Packages/**/*', 'prefabs-source/ProjectSettings/**/*') }}
-          restore-keys: |
-            prefabs-source-Library-
-
       - name: Create Unity build
-        uses: game-ci/unity-builder@v2.0.4
+        uses: game-ci/unity-builder@v2.1.2
         with:
           projectPath: prefabs-source
           buildsPath: prefabs-source/build
@@ -40,6 +32,12 @@ jobs:
           UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
           UNITY_EMAIL: ${{ secrets.UNITY_EMAIL }}
           UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
+
+      - name: Upload outputs
+        uses: actions/upload-artifact@v3
+        with:
+          name: ScriptAssemblies
+          path: prefabs-source/Library/ScriptAssemblies
 
   determine-matrix:
     runs-on: ubuntu-latest
@@ -128,6 +126,11 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
+
+    - uses: actions/download-artifact@v3
+      with:
+        name: ScriptAssemblies
+        path: prefabs-source/Library/ScriptAssemblies
 
     - name: Fetch game update info
       id: game-info

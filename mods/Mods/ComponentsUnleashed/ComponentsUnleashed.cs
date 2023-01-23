@@ -12,17 +12,14 @@ using UnityEngine.Rendering;
 using UnityEngine.Playables;
 using UnityEngine.AI;
 
+using DecentM.Pubsub;
+using DecentM.UI;
+using DecentM.VideoPlayer;
+using DecentM.VideoPlayer.Plugins;
+using DecentM.VideoPlayer.Handlers;
+using DecentM.NotificationSystem.Providers;
+using DecentM.VideoRatelimit;
 using DecentM.Prefabs;
-using DecentM.Prefabs.Pubsub;
-using DecentM.Prefabs.Performance;
-using DecentM.Prefabs.UI;
-using DecentM.Prefabs.VideoPlayer;
-using DecentM.Prefabs.VideoPlayer.Plugins;
-using DecentM.Prefabs.VideoPlayer.Handlers;
-using DecentM.Prefabs.Notifications;
-using DecentM.Prefabs.Notifications.Providers;
-using DecentM.Prefabs.PlayerList;
-using DecentM.Prefabs.VideoRatelimit;
 
 namespace DecentM.Mods.ComponentsUnleashed
 {
@@ -110,7 +107,7 @@ namespace DecentM.Mods.ComponentsUnleashed
             /*
              * PerformanceGovernor
              */
-            whiteList.Add(typeof(PerformanceGovernor));
+            whiteList.Add(typeof(PerformanceGovernor.PerformanceGovernor));
 
             /*
              * UI
@@ -161,7 +158,7 @@ namespace DecentM.Mods.ComponentsUnleashed
             /*
              * NotificationSystem
              */
-            whiteList.Add(typeof(NotificationSystem));
+            whiteList.Add(typeof(NotificationSystem.NotificationSystem));
             whiteList.Add(typeof(PerformanceLevelChangeProvider));
 
             /*
@@ -172,15 +169,7 @@ namespace DecentM.Mods.ComponentsUnleashed
             /*
              * LibDecentM
              */
-            whiteList.Add(typeof(Debugging));
-            whiteList.Add(typeof(LibDecentM));
-            whiteList.Add(typeof(PlayerList));
-            whiteList.Add(typeof(Scheduling));
-
-            /*
-             * CustomEvent
-             */
-            whiteList.Add(typeof(TimedCustomEvent));
+            whiteList.Add(typeof(PlayerList.PlayerList));
 
             Traverse.Create<CVRTools>().Field("componentWhiteList").SetValue(whiteList);
         }

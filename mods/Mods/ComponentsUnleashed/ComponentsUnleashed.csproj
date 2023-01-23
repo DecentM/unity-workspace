@@ -51,9 +51,57 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\chilloutvr\ChilloutVR_Data\Managed\DarkRift.Client.dll</HintPath>
     </Reference>
-    <Reference Include="DecentM.Prefabs, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="DecentM.Collections">
+      <HintPath>..\..\..\prefabs-source\Library\ScriptAssemblies\DecentM.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="DecentM.Collections.Editor">
+      <HintPath>..\..\..\prefabs-source\Library\ScriptAssemblies\DecentM.Collections.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="DecentM.CustomComponents.VLCPlayer">
+      <HintPath>..\..\..\prefabs-source\Library\ScriptAssemblies\DecentM.CustomComponents.VLCPlayer.dll</HintPath>
+    </Reference>
+    <Reference Include="DecentM.ManualCamera">
+      <HintPath>..\..\..\prefabs-source\Library\ScriptAssemblies\DecentM.ManualCamera.dll</HintPath>
+    </Reference>
+    <Reference Include="DecentM.NotificationSystem">
+      <HintPath>..\..\..\prefabs-source\Library\ScriptAssemblies\DecentM.NotificationSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="DecentM.PerformanceGovernor">
+      <HintPath>..\..\..\prefabs-source\Library\ScriptAssemblies\DecentM.PerformanceGovernor.dll</HintPath>
+    </Reference>
+    <Reference Include="DecentM.PerformanceGovernor.Editor">
+      <HintPath>..\..\..\prefabs-source\Library\ScriptAssemblies\DecentM.PerformanceGovernor.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="DecentM.PlayerList">
+      <HintPath>..\..\..\prefabs-source\Library\ScriptAssemblies\DecentM.PlayerList.dll</HintPath>
+    </Reference>
+    <Reference Include="DecentM.Pubsub">
+      <HintPath>..\..\..\prefabs-source\Library\ScriptAssemblies\DecentM.Pubsub.dll</HintPath>
+    </Reference>
+    <Reference Include="DecentM.Shared, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\prefabs\Assets\UserLibs\DecentM.Prefabs.dll</HintPath>
+      <HintPath>..\..\..\prefabs-source\Library\ScriptAssemblies\DecentM.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="DecentM.Shared.Editor">
+      <HintPath>..\..\..\prefabs-source\Library\ScriptAssemblies\DecentM.Shared.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="DecentM.UI">
+      <HintPath>..\..\..\prefabs-source\Library\ScriptAssemblies\DecentM.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="DecentM.VideoPlayer">
+      <HintPath>..\..\..\prefabs-source\Library\ScriptAssemblies\DecentM.VideoPlayer.dll</HintPath>
+    </Reference>
+    <Reference Include="DecentM.VideoPlayer.Editor">
+      <HintPath>..\..\..\prefabs-source\Library\ScriptAssemblies\DecentM.VideoPlayer.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="DecentM.VideoRatelimit">
+      <HintPath>..\..\..\prefabs-source\Library\ScriptAssemblies\DecentM.VideoRatelimit.dll</HintPath>
+    </Reference>
+    <Reference Include="DecentM.VideoRatelimit.Editor">
+      <HintPath>..\..\..\prefabs-source\Library\ScriptAssemblies\DecentM.VideoRatelimit.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="DecentM.YTDlp">
+      <HintPath>..\..\..\prefabs-source\Library\ScriptAssemblies\DecentM.YTDlp.dll</HintPath>
     </Reference>
     <Reference Include="MelonLoader">
       <SpecificVersion>False</SpecificVersion>
