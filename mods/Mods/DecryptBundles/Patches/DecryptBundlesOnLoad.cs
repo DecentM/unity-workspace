@@ -13,29 +13,21 @@ namespace DecentM.Mods.DecryptBundles.Patches
     {
         [HarmonyPatch(typeof(CVRObjectLoader), "InitiateLoadIntoWorld")]
         [HarmonyPrefix]
-        static bool LoadPrefix(DownloadJob.ObjectType t, string objectId, byte[] b = null)
+        static bool LoadPrefix(DownloadTask.ObjectType t, string objectId, byte[] b = null)
         {
             string fileName = "";
 
             switch (t)
             {
-                case DownloadJob.ObjectType.ScriptBundle:
-                    fileName += "scriptbundle";
-                    break;
-
-                case DownloadJob.ObjectType.Avatar:
+                case DownloadTask.ObjectType.Avatar:
                     fileName += "avatar";
                     break;
 
-                case DownloadJob.ObjectType.Prop:
+                case DownloadTask.ObjectType.Prop:
                     fileName += "prop";
                     break;
 
-                case DownloadJob.ObjectType.Mission:
-                    fileName += "mission";
-                    break;
-
-                case DownloadJob.ObjectType.World:
+                case DownloadTask.ObjectType.World:
                     fileName += "world";
                     break;
 
