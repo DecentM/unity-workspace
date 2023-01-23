@@ -136,8 +136,7 @@ jobs:
       id: game-info
       run: |
         Invoke-WebRequest https://api.steamcmd.net/v1/info/661130 -OutFile info.json
-        $hashinfo = Get-FileHash info.json
-        echo "hash=$($hashinfo.hash)" >> $GITHUB_OUTPUT
+        echo "hash=$(Get-FileHash info.json)" >> $GITHUB_OUTPUT
 
     - name: Cache game files
       id: cache-game-files
