@@ -8,7 +8,7 @@ if (Test-Path -Path $folder) {
 
 Write-Output "Installing Melonloader..."
 
-mkdir -p $folder
+New-Item $folder -ItemType Directory -ea 0
 $pastlocation = Get-Location
 Set-Location $folder
 

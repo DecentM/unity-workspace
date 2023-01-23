@@ -66,6 +66,8 @@ jobs:
 #       Prefabs        #
 ########################
   build-prefabs-source:
+    name: publish-${{ matrix.folder }}
+
     runs-on: ubuntu-latest
 
     needs:
@@ -163,3 +165,9 @@ jobs:
 
     - name: Build
       run: dotnet build --no-restore -c Release
+
+    - name: Upload outputs
+      uses: actions/upload-artifact@v3
+      with:
+        name: Mods
+        path: mods/Mods/*/bin/Release/

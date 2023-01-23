@@ -104,7 +104,6 @@
       <HintPath>..\..\..\prefabs-source\Library\ScriptAssemblies\DecentM.YTDlp.dll</HintPath>
     </Reference>
     <Reference Include="MelonLoader">
-      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\melonloader\MelonLoader.x64\MelonLoader\MelonLoader.dll</HintPath>
     </Reference>
     <Reference Include="System" />
@@ -197,9 +196,12 @@
   <ItemGroup>
     <None Include="app.config" />
   </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>echo F | xcopy /y /d "$(ProjectDir)$(OutDir)$(TargetFileName)" "$(SolutionDir)chilloutvr\Mods\$(ProjectName).dll"
-</PostBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
   </PropertyGroup>
 </Project>
