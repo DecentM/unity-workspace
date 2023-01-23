@@ -54,7 +54,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
-      - name: Create package list
+      - name: Determine package list
         id: jobs
         run: |
           set -exu
@@ -65,14 +65,13 @@ jobs:
 ########################
 #       Prefabs        #
 ########################
-  build-prefabs-source:
+  publish-prefabs:
     name: publish-${{ matrix.folder }}
 
     runs-on: ubuntu-latest
 
     needs:
       - determine-matrix
-      - build-dlls
 
     strategy:
       matrix:
@@ -90,7 +89,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v3
         with:
-          node-version: '16.x'
+          node-version: '18.x'
           registry-url: 'https://npm.pkg.github.com/@decentm'
 
       - name: Check if version has been updated
@@ -100,17 +99,12 @@ jobs:
           diff-search: true
           file-name: prefabs-source/Packages/${{ matrix.folder }}/package.json
 
-      - name: Publish if changed
+      - name: Publish if updated
         if: steps.check.outputs.changed == 'true'
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           set -exu
-
-          cd ${{ matrix.folder }}
-          cp $NPM_CONFIG_USERCONFIG .
-          yarn publish --access=public
-          cd -
+          git subtree split -P prefabs-source/Packages/${{ matrix.folder }} -b release/${{ matrix.folder }}/${{ steps.check.outputs.version }}
+          git push origin release/${{ matrix.folder }}/${{ steps.check.outputs.version }}
 
 ########################
 #         Mods         #
@@ -137,8 +131,8 @@ jobs:
     - name: Fetch game update info
       id: game-info
       run: |
-        Invoke-WebRequest https://api.steamcmd.net/v1/info/661130 -OutFile info.json
-        echo "hash=$(Get-FileHash info.json)" >> $GITHUB_OUTPUT
+        $build_info = Invoke-RestMethod -Uri https://api.steamcmd.net/v1/info/661130
+        echo hash=$build_info.data.'661130'.'_sha' >> $GITHUB_OUTPUT
 
     - name: Cache game files
       id: cache-game-files
