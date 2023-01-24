@@ -80,7 +80,6 @@ jobs:
     defaults:
       run:
         shell: bash
-        working-directory: prefabs-source
 
     steps:
       - name: Checkout
@@ -92,19 +91,28 @@ jobs:
           node-version: '18.x'
           registry-url: 'https://npm.pkg.github.com/@decentm'
 
-      - name: Check if version has been updated
-        id: check
-        uses: EndBug/version-check@v2
-        with:
-          diff-search: true
-          file-name: prefabs-source/Packages/${{ matrix.folder }}/package.json
-
-      - name: Publish if updated
-        if: steps.check.outputs.changed == 'true'
+      - name: Get package
+        id: package
         run: |
           set -exu
-          git subtree split -P prefabs-source/Packages/${{ matrix.folder }} -b release/${{ matrix.folder }}/${{ steps.check.outputs.version }}
-          git push origin release/${{ matrix.folder }}/${{ steps.check.outputs.version }}
+          version=$(cat prefabs-source/Packages/${{ matrix.folder }}/package.json | jq -r .version)
+          echo version=$version >> $GITHUB_OUTPUT
+
+      - name: Publish
+        run: |
+          set -exu
+          git config user.email "noreply@actions.github.com"
+          git config user.name "GitHub Actions"
+
+          git subtree split -P prefabs-source/Packages/${{ matrix.folder }} -b release/${{ matrix.folder }}
+          git push -f origin release/${{ matrix.folder }}
+
+      - name: Create tag
+        uses: rickstaa/action-create-tag@v1
+        with:
+          tag: ${{ matrix.folder }}/${{ steps.package.outputs.version }}
+          message: "Cut release for ${{ matrix.folder }}: ${{ steps.package.outputs.version }}"
+          force_push_tag: true
 
 ########################
 #         Mods         #
