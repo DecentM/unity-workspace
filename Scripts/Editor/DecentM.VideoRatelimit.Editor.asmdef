@@ -1,0 +1,19 @@
+{
+    "name": "DecentM.VideoRatelimit.Editor",
+    "references": [
+        "DecentM.Shared.Editor",
+        "DecentM.VideoRatelimit",
+        "DecentM.Shared"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
