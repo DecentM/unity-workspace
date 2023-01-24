@@ -1,0 +1,21 @@
+{
+    "name": "com.decentm.collections",
+    "version": "0.0.1",
+    "displayName": "DecentM.Collections",
+    "description": "A reimplementation of a few .net collections, using only object arrays as the backing storage",
+    "unity": "2019.4",
+    "unityRelease": "31f1",
+    "documentationUrl": "https://decentm.github.io/",
+    "changelogUrl": "https://github.com/DecentM/mods-workspace/tree/master/prefabs-source/CHANGELOG.md",
+    "licensesUrl": "https://github.com/DecentM/mods-workspace/tree/master/LICENSE",
+    "dependencies": {
+        "com.decentm.shared": "0.0.1"
+    },
+    "author": {
+        "name": "DecentM"
+    },
+    "publishConfig": {
+        "registry": "https://npm.pkg.github.com/@decentm",
+        "access": "public"
+    }
+}
