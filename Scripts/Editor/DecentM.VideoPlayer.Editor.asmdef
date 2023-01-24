@@ -1,0 +1,23 @@
+{
+    "name": "DecentM.VideoPlayer.Editor",
+    "references": [
+        "DecentM.VideoPlayer",
+        "DecentM.Shared.Editor",
+        "UnityEditor.TestRunner",
+        "DecentM.YTDlp",
+        "DecentM.Shared",
+        "DecentM.Pubsub",
+        "DecentM.VideoRatelimit"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

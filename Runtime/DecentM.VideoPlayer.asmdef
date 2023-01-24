@@ -1,0 +1,21 @@
+{
+    "name": "DecentM.VideoPlayer",
+    "references": [
+        "Unity.TextMeshPro",
+        "DecentM.YTDlp",
+        "DecentM.Shared",
+        "DecentM.Pubsub",
+        "DecentM.VideoRatelimit",
+        "DecentM.CustomComponents.VLCPlayer",
+        "DecentM.UI"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
