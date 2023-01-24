@@ -1,0 +1,21 @@
+{
+    "name": "com.decentm.performance-governor",
+    "version": "0.0.1",
+    "displayName": "DecentM.PerformanceGovernor",
+    "description": "An event driven system that detects the user's FPS and allows custom scripts to respond",
+    "unity": "2019.4",
+    "unityRelease": "31f1",
+    "documentationUrl": "https://decentm.github.io/",
+    "changelogUrl": "https://github.com/DecentM/mods-workspace/tree/master/prefabs-source/CHANGELOG.md",
+    "licensesUrl": "https://github.com/DecentM/mods-workspace/tree/master/LICENSE",
+    "dependencies": {
+        "com.decentm.shared": "0.0.1"
+    },
+    "author": {
+        "name": "DecentM"
+    },
+    "publishConfig": {
+        "registry": "https://npm.pkg.github.com/@decentm",
+        "access": "public"
+    }
+}

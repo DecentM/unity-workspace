@@ -1,0 +1,16 @@
+{
+    "name": "DecentM.PerformanceGovernor",
+    "references": [
+        "DecentM.Shared",
+        "DecentM.Pubsub"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
