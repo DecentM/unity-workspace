@@ -1,0 +1,18 @@
+{
+    "name": "DecentM.NotificationSystem",
+    "references": [
+        "Unity.TextMeshPro",
+        "DecentM.Shared",
+        "DecentM.PerformanceGovernor",
+        "DecentM.Pubsub"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
