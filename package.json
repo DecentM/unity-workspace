@@ -1,0 +1,22 @@
+{
+    "name": "com.decentm.yt-dlp",
+    "version": "0.0.1",
+    "displayName": "DecentM.YTDlp",
+    "description": "A wrapper and command set around yt-dlp that implement URL resolving, subtitle extracting, and other miscellaneous tasks related to web video",
+    "unity": "2019.4",
+    "unityRelease": "31f1",
+    "documentationUrl": "https://decentm.github.io/",
+    "changelogUrl": "https://github.com/DecentM/mods-workspace/tree/master/prefabs-source/CHANGELOG.md",
+    "licensesUrl": "https://github.com/DecentM/mods-workspace/tree/master/LICENSE",
+    "dependencies": {
+        "com.decentm.shared": "0.0.1",
+        "com.decentm.pubsub": "0.0.1"
+    },
+    "author": {
+        "name": "DecentM"
+    },
+    "publishConfig": {
+        "registry": "https://npm.pkg.github.com/@decentm",
+        "access": "public"
+    }
+}
