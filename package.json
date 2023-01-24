@@ -1,0 +1,22 @@
+{
+    "name": "com.decentm.pubsub",
+    "version": "0.0.1",
+    "displayName": "DecentM.Pubsub",
+    "description": "A system using publish/subscribe architecture to queue and send events to MonoBehaviours",
+    "unity": "2019.4",
+    "unityRelease": "31f1",
+    "documentationUrl": "https://decentm.github.io/",
+    "changelogUrl": "https://github.com/DecentM/mods-workspace/tree/master/prefabs-source/CHANGELOG.md",
+    "licensesUrl": "https://github.com/DecentM/mods-workspace/tree/master/LICENSE",
+    "dependencies": {
+        "com.decentm.shared": "0.0.1",
+        "com.decentm.collections": "0.0.1"
+    },
+    "author": {
+        "name": "DecentM"
+    },
+    "publishConfig": {
+        "registry": "https://npm.pkg.github.com/@decentm",
+        "access": "public"
+    }
+}
